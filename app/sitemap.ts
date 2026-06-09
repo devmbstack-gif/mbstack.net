@@ -9,6 +9,7 @@ const routes = [
   "/team",
   "/contact",
   "/consultancy",
+  "/sales",
   "/privacy",
 ];
 

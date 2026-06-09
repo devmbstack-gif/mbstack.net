@@ -1,12 +1,38 @@
+import { COMPANY_STATS, PORTFOLIO_LINK } from "./site";
+
 export const SALES = {
   hero: {
-    badge: "Limited Spots Available",
-    headline: "Transform Your Business with High-Performance IT Solutions",
-    subheadline: "Accelerate Your Growth – Fast, Reliable, and Professional!",
-    description: "We help you scale your business with custom software development, mobile apps, and AI solutions - with full support from concept to deployment and beyond.",
-    cta: "Get Started Now",
-    ctaSubtext: "Over 100+ businesses trust us",
-    videoUrl: "https://www.youtube.com/embed/your-video-id", // Placeholder
+    headline: "Your Operations Have Grown Faster Than Your Systems.",
+    painPoints: [
+      "Processes become bottlenecks.",
+      "Teams spend more time chasing information.",
+      "Leadership gets pulled into operations instead of focusing on growth.",
+    ],
+    description:
+      "We help growing companies eliminate operational friction, connect disconnected systems, and build the infrastructure needed to scale without replacing what already works.",
+    trustLine:
+      "Trusted by 50+ companies across the USA, Saudi Arabia, UK, and Pakistan.",
+    videoUrl: "https://www.youtube.com/embed/your-video-id",
+    cta: "Book Your Operational Friction Assessment",
+    assessmentDescription:
+      "In 30 minutes, we'll identify the process costing your business the most time, capacity, and executive attention.",
+    pilotNote:
+      "We typically start with a focused 4-week pilot so you can see measurable results before making a larger commitment.",
+    benefits: [
+      "Security-first implementation",
+      "Low-risk rollout",
+      "Measurable outcomes",
+      "Built around existing systems",
+    ],
+    statsLine: `${COMPANY_STATS.companiesServed}+ Companies Served · ${COMPANY_STATS.projectsCompleted}+ Projects Delivered`,
+    services: [
+      "Custom Software",
+      "AI Solutions",
+      "Automation",
+      "Enterprise Integrations",
+    ],
+    ctaHref: "/consultancy",
+    portfolio: PORTFOLIO_LINK,
   },
   trustLogos: [
     { name: "Space Zone", logo: "/skillsAndComapies/s.webp" },
@@ -16,118 +42,165 @@ export const SALES = {
     { name: "Howwe", logo: "/skillsAndComapies/howwe.webp" },
   ],
   problem: {
-    headline: "Building software shouldn't be a nightmare...",
-    description: "As a business owner, you dream of scaling your operations — but the path feels full of obstacles. Complex tech stacks, unreliable developers, and unclear processes make it hard to turn your vision into a reality.",
-    frustration: "It's frustrating when you know what you want to build, but you're unsure how to start the development process or which technology you need. Maybe you've even tried working with an agency, only to end up with more bugs than solutions.",
-    truth: "The truth is: it's not about the code. It's about having the right partner and a clear roadmap to launch your product successfully.",
-    image: "/portfolios/growbit ai.webp", // Placeholder image from existing projects
-  },
-  expectations: {
-    headline: "What you can expect",
-    subheadline: "Use your full potential",
-    items: [
-      {
-        title: "Your clear roadmap",
-        description: "Forget the uncertainty. We'll show you exactly how to build, launch, and scale your product quickly without unnecessary technical debt.",
-        icon: "roadmap",
-      },
-      {
-        title: "Expert Developers",
-        description: "You won't just get any dev — you'll secure a dedicated team that understands your business goals and values your vision.",
-        icon: "team",
-      },
-      {
-        title: "Seamless Integration",
-        description: "We take care of hosting, architecture, and all technical deployments — so you can fully focus on growing your business.",
-        icon: "integration",
-      },
-      {
-        title: "Security & Success",
-        description: "With our support, you'll launch your product without delays and secure a successful, long-term digital presence.",
-        icon: "security",
-      },
-    ],
+    headline: "Why Growing Companies Get Stuck",
+    lead: "Most companies don't need more software.",
+    leadAccent: "They need less friction.",
+    description:
+      "Disconnected systems, manual handoffs, duplicate work, and reporting bottlenecks create a hidden tax on growth.",
+    solution:
+      "The solution isn't adding more tools. It's fixing the process that's slowing everything down.",
+    closing: "That's where we start.",
   },
   steps: {
-    headline: "The 6-Step Path to Success",
+    headline: "How We Work",
     items: [
-      { 
-        title: "Initial Consultation", 
-        description: "We start with a deep dive into your business vision. Our experts clarify your goals, technical requirements, and market potential to set a solid foundation for your project.",
-        image: "/portfolios/ingallery.webp"
+      {
+        title: "Operational Friction Assessment",
+        description:
+          "We identify the biggest bottleneck in your operation.",
       },
-      { 
-        title: "Strategic Planning", 
-        description: "No more guesswork. We create a detailed roadmap, choosing the perfect tech stack and architectural framework to ensure your product is scalable, secure, and future-proof.",
-        image: "/portfolios/ban travel.webp"
+      {
+        title: "4-Week Pilot",
+        description:
+          "We solve one high-impact problem with a defined scope and measurable outcome.",
       },
-      { 
-        title: "Design & UX Prototyping", 
-        description: "Visualizing the future. Our designers craft intuitive UI/UX prototypes, focusing on user engagement and seamless navigation before a single line of code is written.",
-        image: "/portfolios/growbit ai.webp"
+      {
+        title: "Review The Results",
+        description:
+          "You evaluate real results before committing to anything larger.",
       },
-      { 
-        title: "Agile Development", 
-        description: "Building with precision. Our developers use agile methodologies, providing you with regular updates and functional builds, ensuring the project aligns perfectly with your evolving needs.",
-        image: "/portfolios/ai alim.webp"
-      },
-      { 
-        title: "Rigorous QA & Testing", 
-        description: "Zero compromise on quality. We perform extensive automated and manual testing across all devices to ensure your application is bug-free, fast, and remarkably stable.",
-        image: "/portfolios/lumoganic.webp"
-      },
-      { 
-        title: "Launch & Ongoing Support", 
-        description: "Your journey doesn't end at launch. We handle the full deployment and provide continuous maintenance and support to keep your platform running at peak performance.",
-        image: "/portfolios/online derma.webp"
+      {
+        title: "Scale With Confidence",
+        description:
+          "Once proven, we expand strategically across the organization.",
       },
     ],
   },
-  framework: {
-    headline: "Our Framework for Growth",
-    description: "A structured approach to international recruitment and software excellence.",
+  clientResults: {
+    headline: "Client Projects",
     items: [
-      "Agile Development",
-      "Scalable Architecture",
-      "Cloud Solutions",
-      "AI Integration",
-      "Dedicated Support",
-      "Modern UI/UX",
-      "Security First",
-    ]
+      {
+        name: "Growbit",
+        problem:
+          "HR teams spent hours on manual hiring, payroll, and attendance tracking across disconnected tools.",
+        solution:
+          "We built an AI-powered platform that automates hiring workflows, payroll, and performance management in one integrated system.",
+        result: "Manual HR processing → 70% reduction in administrative overhead",
+        image: "/portfolios/growbit ai.webp",
+      },
+      {
+        name: "Ban Travel",
+        problem:
+          "Booking operations relied on manual handoffs between systems, slowing response times and creating duplicate work.",
+        solution:
+          "We connected their booking, support, and reporting systems into a seamless platform with real-time availability.",
+        result: "Fragmented booking flow → Unified operations with faster customer response",
+        image: "/portfolios/ban travel.webp",
+      },
+      {
+        name: "In Gallery",
+        problem:
+          "Artists and collectors lacked a secure, seamless platform to connect and showcase digital art collections.",
+        solution:
+          "We developed a sophisticated digital art gallery platform with secure transaction systems and high-performance image rendering.",
+        result: "Slow manual art trading → Optimized digital marketplace with 100% secure artist-to-collector connections",
+        image: "/portfolios/ingallery.webp",
+      },
+      {
+        name: "Lumoganic",
+        problem:
+          "An eco-friendly skincare brand needed an e-commerce infrastructure that reflected its brand values while handling scale.",
+        solution:
+          "We designed and built a performance-first e-commerce engine with streamlined checkout and inventory management.",
+        result: "Limited local reach → Global e-commerce presence with 40% increase in repeat customers",
+        image: "/portfolios/lumoganic.webp",
+      },
+      {
+        name: "Online Derma",
+        problem:
+          "Patients struggled to find certified dermatologists for quick, personalized skincare consultations.",
+        solution:
+          "We built a teledoctor platform enabling real-time consultations, secure medical record storage, and personalized treatment plans.",
+        result: "Long wait times → Instant access to specialists with a 4.9/5 patient satisfaction rate",
+        image: "/portfolios/online derma.webp",
+      },
+    ],
+  },
+  successStories: {
+    headline: "Success Stories",
+    items: [
+      {
+        clientName: "Howwe",
+        problem: "Talent in Saudi Arabia was Smashed",
+        solution: "We offer the online artist booking platform for saudi arabia talent communities",
+        result: "Before our offered platform that’s revenue was 100k $ but after our developed platform this beat the Millions",
+        bgImage:
+          "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+      },
+      {
+        clientName: "Dr. Al Hammad",
+        problem: " he was a senior project manager on their company but he did not have system to manage their projects and saas",
+        solution: "we offered the our services of talented team we worked multiple projects of AI and SAAS tools development. Also Automations projects",
+        result: "the projects was facing crysing but after our developed platforms this beat millions of Saudi Reyals revenue in saudi market.",
+        bgImage:
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
+      },
+    ],
+  },
+  whyUs: {
+    headline: "Why Companies Work with Us",
+    description: `We've helped more than ${COMPANY_STATS.companiesServed} companies modernize operations, integrate systems, and build infrastructure that supports growth.`,
+    beliefIntro: "Our belief is simple:",
+    belief:
+      "The businesses that scale best aren't the ones running the most software. They're the ones carrying the least operational friction.",
+    founder: {
+      name: "Mr. Bilal",
+      title: "CEO & Co-Founder",
+      image: "/team/sir.webp",
+    },
   },
   testimonials: [
     {
       name: "Ahmed Raza",
       role: "CEO at GrowthTechz",
-      quote: "MB Stack transformed our legacy systems into a modern, scalable platform. Their support is unmatched.",
+      quote:
+        "MB Stack transformed our legacy systems into a modern, scalable platform. Their support is unmatched.",
       image: "/team/sir.webp",
     },
     {
       name: "John Doe",
       role: "Project Manager",
-      quote: "The speed and quality of work delivered by MB Stack exceeded our expectations. Highly recommended!",
+      quote:
+        "The speed and quality of work delivered by MB Stack exceeded our expectations. Highly recommended!",
       image: "/team/Mr-Ahmad.webp",
-    }
+    },
   ],
   faqs: [
     {
-      question: "What is the typical timeline for a project?",
-      answer: "Depending on the complexity, projects typically range from 2 weeks for MVPs to 3-6 months for enterprise solutions."
+      question: "Will this work with our existing systems?",
+      answer: "Yes. We prioritize integration before replacement.",
     },
     {
-      question: "Do you offer post-launch support?",
-      answer: "Yes, we provide 24/7 maintenance and support to ensure your application runs smoothly after launch."
+      question: "Will implementation disrupt operations?",
+      answer: "No. Everything is phased, tested, and validated.",
     },
     {
-      question: "How do you handle project management?",
-      answer: "We use agile methodologies and dedicated project managers to keep you updated every step of the way."
-    }
+      question: "How do we measure ROI?",
+      answer: "We establish baseline metrics and measure actual results.",
+    },
+    {
+      question: "Why start with a pilot?",
+      answer:
+        "Because you should see proof before making a larger commitment.",
+    },
   ],
   footerCta: {
-    headline: "Ready to Start Your Journey?",
-    subheadline: "Join 100+ businesses that have scaled with MB Stack.",
-    cta: "Book a Free Consultation",
-    href: "/consultancy"
-  }
+    headline: "Ready To Find the Bottleneck Holding Growth Back?",
+    subheadline: "Book your Operational Friction Assessment.",
+    description:
+      "We'll identify the process costing your business the most time, capacity, and attention and show you the lowest-risk path to improving it.",
+    closing: "No obligation. No generic pitch. Just clarity.",
+    cta: "Book Your Operational Friction Assessment",
+    href: "/consultancy",
+  },
 } as const;

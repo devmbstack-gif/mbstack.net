@@ -72,12 +72,25 @@ export const LIVE_COUNTRIES = [
   { name: "United States of America", flag: "🇺🇸" },
 ] as const;
 
+export const COMPANY_STATS = {
+  projectsCompleted: 500,
+  happyClients: 100,
+  companiesServed: 50,
+  teamMembers: 20,
+  yearsExperience: 10,
+} as const;
+
 export const STATS = [
-  { value: 500, label: "Projects Completed" },
-  { value: 100, label: "Happy Clients" },
-  { value: 20, label: "Team Members" },
-  { value: 10, label: "Years Experience" },
+  { value: COMPANY_STATS.projectsCompleted, label: "Projects Completed" },
+  { value: COMPANY_STATS.happyClients, label: "Happy Clients" },
+  { value: COMPANY_STATS.teamMembers, label: "Team Members" },
+  { value: COMPANY_STATS.yearsExperience, label: "Years Experience" },
 ] as const;
+
+export const PORTFOLIO_LINK = {
+  label: "View Our Projects",
+  href: "/portfolio",
+} as const;
 
 export const CONSULTANCY_BANNER = {
   title: "Get Free Consultancy",

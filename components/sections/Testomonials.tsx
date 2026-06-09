@@ -128,7 +128,7 @@ export default function Testimonials() {
                       {image ? (
                         <Image
                           src={image}
-                          alt=""
+                          alt={name}
                           width={64}
                           height={64}
                           className="object-cover w-full h-full relative z-10"

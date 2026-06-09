@@ -99,7 +99,7 @@ export default function Hero() {
                 >
                   <Image
                     src={src}
-                    alt=""
+                    alt={src.split("/").pop()?.split(".")[0] || "Client"}
                     width={46}
                     height={46}
                     className="object-cover w-full h-full"
