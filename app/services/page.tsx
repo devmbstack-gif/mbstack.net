@@ -76,8 +76,7 @@ export default function ServicesPage() {
               have a way to help you move forward.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-6 relative z-10">
-              {/* Path 1: Consultancy */}
+            <div className="grid md:grid-cols-2 gap-6 relative z-10 max-w-3xl mx-auto">
               <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
                 <h4 className="font-bold text-xl mb-2">Need Strategy?</h4>
                 <p className="text-sm text-white mb-6">
@@ -92,23 +91,6 @@ export default function ServicesPage() {
                 </Link>
               </div>
 
-              {/* Path 2: Packages */}
-              <div className="bg-white p-6 rounded-2xl shadow-lg transform md:-translate-y-4 scale-105 border-2 border-brand">
-                <h4 className="font-bold text-xl mb-2 text-slate-900">
-                  Ready to Build?
-                </h4>
-                <p className="text-sm text-slate-500 mb-6">
-                  Transparent pricing with our pre-defined software packages.
-                </p>
-                <Link
-                  href="/packages"
-                  className="inline-block w-full py-3 bg-brand text-white font-bold rounded-xl hover:bg-brand transition-colors"
-                >
-                  View Packages
-                </Link>
-              </div>
-
-              {/* Path 3: Contact */}
               <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
                 <h4 className="font-bold text-xl mb-2">Just a Question?</h4>
                 <p className="text-sm text-white mb-6">

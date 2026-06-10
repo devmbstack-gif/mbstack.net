@@ -81,14 +81,14 @@ export default function AboutPage() {
           </Link>
 
           <Link
-            href="/packages"
+            href="/portfolio"
             className="group p-8 border-2 border-slate-200 rounded-2xl hover:border-brand transition-all"
           >
             <h4 className="font-bold text-lg group-hover:text-brand">
-              View Our Packages →
+              View Our Portfolio →
             </h4>
             <p className="text-slate-500 mt-2">
-              Clear pricing for defined needs. Perfect for startups and MVPs.
+              Explore real projects we have delivered for clients worldwide.
             </p>
           </Link>
 

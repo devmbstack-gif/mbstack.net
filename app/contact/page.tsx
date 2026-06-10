@@ -60,13 +60,13 @@ export default function ContactPage() {
           <div className="p-8 bg-brand rounded-3xl text-white shadow-xl">
             <h3 className="text-xl font-bold mb-2">Need a faster route?</h3>
             <p className="text-white mb-4">
-              Check our service packages for fixed pricing and rapid delivery.
+              Book a free strategy session and get expert guidance on your project.
             </p>
             <a
-              href="/packages"
+              href="/consultancy"
               className="inline-block px-6 py-2 bg-white text-brand font-bold rounded-full text-sm"
             >
-              View Packages
+              Book Consultancy
             </a>
           </div>
         </div>

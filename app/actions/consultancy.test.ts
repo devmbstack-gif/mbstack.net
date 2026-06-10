@@ -22,7 +22,6 @@ function formData(overrides: Record<string, string> = {}) {
     email: "test@example.com",
     type: "web",
     budget: "5000-10000",
-    package: "Starter",
     description: "Need a website.",
     ...overrides,
   };
@@ -62,7 +61,6 @@ describe("submitConsultancy", () => {
         email: "test@example.com",
         type: "web",
         budget: "5000-10000",
-        packageName: "Starter",
         description: "Need a website.",
       },
     });

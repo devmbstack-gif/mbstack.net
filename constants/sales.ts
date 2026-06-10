@@ -11,7 +11,7 @@ export const SALES = {
     description:
       "We help growing companies eliminate operational friction, connect disconnected systems, and build the infrastructure needed to scale without replacing what already works.",
     trustLine:
-      "Trusted by 50+ companies across the USA, Saudi Arabia, UK, and Pakistan.",
+      "Trusted by 50+ companies across the USA, Saudi Arabia, UAE, and Pakistan.",
     videoUrl: "https://www.youtube.com/embed/your-video-id",
     cta: "Book Your Operational Friction Assessment",
     assessmentDescription:

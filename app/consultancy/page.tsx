@@ -1,6 +1,4 @@
 "use client";
-import PackagesSection from "@/components/sections/PackagesSection";
-import { PACKAGES } from "@/constants";
 import { BarChart, Coffee, Lightbulb, Zap } from "lucide-react";
 import { submitConsultancy } from "../actions/consultancy";
 import { useActionState, useEffect } from "react";
@@ -72,11 +70,6 @@ export default function ConsultancyPage() {
           ))}
         </div>
 
-        {/* the packages section */}
-        <section className="py-16 px-6 max-w-7xl mx-auto">
-          <PackagesSection />
-        </section>
-
         {/* The Form Section */}
         <div className="max-w-5xl mx-auto bg-white rounded-3xl shadow-2xl border border-slate-100 overflow-hidden flex flex-col md:flex-row">
           {/* Left Panel */}
@@ -141,37 +134,19 @@ export default function ConsultancyPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-1">
-                <label className="text-xs font-bold uppercase text-slate-500 ml-1">
-                  Service Interest
-                </label>
-                <select
-                  name="type"
-                  className="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl outline-none focus:ring-2 focus:ring-brand transition-all"
-                >
-                  <option>Web Development</option>
-                  <option>Mobile App</option>
-                  <option>Cloud/DevOps</option>
-                  <option>General Strategy</option>
-                </select>
-              </div>
-              <div className="space-y-1">
-                <label className="text-xs font-bold uppercase text-slate-500 ml-1">
-                  Select a Package (Optional)
-                </label>
-                <select
-                  name="package"
-                  className="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl outline-none focus:ring-2 focus:ring-brand transition-all font-semibold text-brand"
-                >
-                  <option value="none">No specific package</option>
-                  {PACKAGES.map((pkg) => (
-                    <option key={pkg.id} value={pkg.name}>
-                      {pkg.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
+            <div className="space-y-1">
+              <label className="text-xs font-bold uppercase text-slate-500 ml-1">
+                Service Interest
+              </label>
+              <select
+                name="type"
+                className="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl outline-none focus:ring-2 focus:ring-brand transition-all"
+              >
+                <option>Web Development</option>
+                <option>Mobile App</option>
+                <option>Cloud/DevOps</option>
+                <option>General Strategy</option>
+              </select>
             </div>
 
             <div className="space-y-1">

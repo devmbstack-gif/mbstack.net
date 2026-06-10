@@ -68,7 +68,7 @@ export const HERO_CLIENT_IMAGES = [
 export const LIVE_COUNTRIES = [
   { name: "Pakistan", flag: "🇵🇰" },
   { name: "Saudi Arabia", flag: "🇸🇦" },
-  { name: "United Kingdom", flag: "🇬🇧" },
+  { name: "United Arabs Emirate", flag: "🇦🇪" },
   { name: "United States of America", flag: "🇺🇸" },
 ] as const;
 
@@ -173,89 +173,10 @@ export const FOOTER = {
     { label: "Terms of Service", href: "/privacy" },
   ],
   copyright:
-    "Copyright © 2022-2026 MB Soft Solution LLC | Software Development Company",
+    "Copyright © 2022-2026 MBStack LLC | Software Development Company",
   whatsappNumber: "+923479516266", // e.g. '923161465299' for WhatsApp link
   chatLabel: "Chat with us",
 } as const;
-
-export const PACKAGES = [
-  {
-    id: "silver",
-    name: "SILVER",
-    nameColor: "#e07c3c",
-    price: "$499",
-    duration: "/3 Days",
-    features: [
-      { text: "1 Domain", included: true },
-      { text: "9 Months Free Hosting", included: true },
-      { text: "E-Commerce Website", included: true },
-      { text: "Custom 7-Pages", included: true },
-      { text: "Fully Responsive Design", included: true },
-      { text: "Product Listings", included: true },
-      { text: "Google Authentication", included: true },
-      { text: "Social Media Integration", included: true },
-      { text: "24/7 Support", included: true },
-      { text: "Shopping Cart, Checkout, Payment Gateways", included: false },
-      { text: "Additional Features", included: false },
-    ],
-    ctaLabel: "Get Started",
-    ctaHref: "/consultancy",
-    highlight: false,
-  },
-  {
-    id: "gold",
-    name: "GOLD",
-    nameColor: "#c9a227",
-    price: "$1099",
-    duration: "/2 Weeks",
-    features: [
-      { text: "1 Domain", included: true },
-      { text: "1 Year Free Hosting", included: true },
-      { text: "Custom 10-Pages", included: true },
-      { text: "Product Filters, Categories", included: true },
-      { text: "Fully Responsive Design", included: true },
-      { text: "Payment Gateway", included: true },
-      { text: "Google Authentication", included: true },
-      { text: "Additional Features", included: true },
-      { text: "Social Media Integration", included: true },
-      { text: "24/7 Support", included: true },
-      { text: "Auto Post Sharing on social media", included: false },
-    ],
-    ctaLabel: "Get Started",
-    ctaHref: "/consultancy",
-    highlight: false,
-  },
-  {
-    id: "platinum",
-    name: "PLATINUM",
-    nameColor: "#b83d4a",
-    price: "$1699",
-    duration: "/1 Month",
-    features: [
-      { text: "1 Domain", included: true },
-      { text: "1 Year Free Hosting", included: true },
-      { text: "Custom Website", included: true },
-      { text: "Custom 15-Pages", included: true },
-      {
-        text: "Product Management, Inventory, Multiple Payment Methods",
-        included: true,
-      },
-      { text: "Product Filters, Categories", included: true },
-      { text: "Fully Responsive Design", included: true },
-      {
-        text: "Shopping Cart, Advanced Checkout, Payment Gateways",
-        included: true,
-      },
-      { text: "Google Authentication", included: true },
-      { text: "Additional Features", included: true },
-      { text: "Social Media Integration", included: true },
-      { text: "Support and Maintenance", included: true },
-    ],
-    ctaLabel: "Get Started",
-    ctaHref: "/consultancy",
-    highlight: true,
-  },
-] as const;
 
 export const TESTIMONIALS = [
   {

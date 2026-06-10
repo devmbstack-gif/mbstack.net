@@ -39,8 +39,7 @@ export default function PrivacyPage() {
               Welcome to **MBStack**. We value your privacy and the trust you
               place in our software house. This Privacy Policy explains how we
               collect, use, and protect your personal information when you use
-              our website, contact us for consultancy, or select our software
-              packages.
+              our website or contact us for consultancy.
             </p>
           </section>
 
@@ -63,7 +62,7 @@ export default function PrivacyPage() {
               </li>
               <li>
                 <span className="font-semibold">Project Data:</span> Project
-                descriptions, budget ranges, and selected software packages.
+                descriptions and budget ranges.
               </li>
             </ul>
           </section>
@@ -80,8 +79,8 @@ export default function PrivacyPage() {
               <div className="p-4 bg-white rounded-xl shadow-sm">
                 <p className="font-bold text-brand">Service Delivery</p>
                 <p>
-                  To provide consultancy and execute the software packages you
-                  select.
+                  To provide consultancy and deliver the software services you
+                  request.
                 </p>
               </div>
               <div className="p-4 bg-white rounded-xl shadow-sm">

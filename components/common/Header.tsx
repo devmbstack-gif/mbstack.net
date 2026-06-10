@@ -17,7 +17,6 @@ const navItems = [
   { href: "/about", label: "About Us" },
   { href: "/services", label: "Our Services" },
   { href: "/team", label: "Team" },
-  { href: "/sales", label: "Join Us" },
   { href: "/portfolio", label: "Portfolio", dropdown: portfolioDropdown },
   { href: "/contact", label: "Contact Us" },
 ];
@@ -37,7 +36,7 @@ export default function Header() {
     return pathname.startsWith(href);
   };
 
-  const isConsultancyActive = pathname === "/consultancy";
+  const isSalesActive = pathname === "/sales";
 
   return (
     <>
@@ -128,9 +127,9 @@ export default function Header() {
             {/* Desktop CTA */}
             <div className="hidden md:block flex-shrink-0">
               <Link
-                href="/consultancy"
+                href="/sales"
                 className={`inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-all duration-200 ${
-                  isConsultancyActive
+                  isSalesActive
                     ? "bg-[#2a9d63] ring-2 ring-[#31B574]"
                     : "bg-[#31B574] hover:bg-[#2a9d63]"
                 }`}
@@ -264,10 +263,10 @@ export default function Header() {
             );
           })}
           <Link
-            href="/consultancy"
+            href="/sales"
             onClick={closeMenu}
             className={`mt-4 inline-flex items-center justify-center px-8 py-3 rounded-xl text-base font-semibold text-white transition-all ${
-              isConsultancyActive
+              isSalesActive
                 ? "bg-[#2a9d63]"
                 : "bg-[#31B574] hover:bg-[#2a9d63]"
             }`}

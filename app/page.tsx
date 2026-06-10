@@ -1,7 +1,6 @@
 import Hero from "@/components/common/Hero";
 import BelowHero from "@/components/sections/BelowHero";
 import ServicesSection from "@/components/sections/ServicesSection";
-import PackagesSection from "@/components/sections/PackagesSection";
 import Testomonials from "@/components/sections/Testomonials";
 import PartnersAndTech from "@/components/sections/PartnersAndTech";
 import { SITE, SEO, SITE_URL } from "@/constants";
@@ -23,7 +22,6 @@ export default function HomePage() {
       <Hero />
       <BelowHero />
       <ServicesSection />
-      <PackagesSection />
       <Testomonials />
       <PartnersAndTech />
     </div>

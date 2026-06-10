@@ -1,7 +1,7 @@
 // actions/consultancy.ts
 "use server";
 import prisma from "@/lib/prisma";
-import { sendNotificationEmail } from "@/lib/mail"; // Import your mailer
+import { sendNotificationEmail } from "@/lib/mail";
 
 type ConsultancyState = { success?: boolean; message?: string } | null;
 export async function submitConsultancy(prevState: ConsultancyState, formData: FormData) {
@@ -9,10 +9,9 @@ export async function submitConsultancy(prevState: ConsultancyState, formData: F
   const email = formData.get("email") as string;
   const type = formData.get("type") as string;
   const budget = formData.get("budget") as string;
-  const packageName = formData.get("package") as string;
   const description = formData.get("description") as string;
 
-  if (!name || !email || !type || !budget || !packageName || !description) {
+  if (!name || !email || !type || !budget || !description) {
     return {
       success: false,
       message: "Please fill in all fields",
@@ -20,14 +19,12 @@ export async function submitConsultancy(prevState: ConsultancyState, formData: F
   }
 
   try {
-    // 1. Save to Database
     await prisma.consultancyRequest.create({
       data: {
         name,
         email,
         type,
         budget,
-        packageName,
         description,
       },
     });
@@ -39,18 +36,16 @@ export async function submitConsultancy(prevState: ConsultancyState, formData: F
       hour: "2-digit",
       minute: "2-digit",
       second: "2-digit",
-      hour12: true, // For 24-hour format
+      hour12: true,
     });
 
     const formattedDate = dateFormatter.format(new Date());
-    // 2. Send Professional Email
     await sendNotificationEmail({
       subject: `New Strategy Session: ${name}`,
       customerName: name,
       details: {
         Email: email,
         "Service Type": type,
-        Package: packageName !== "none" ? packageName : "Custom/None",
         "Budget Range (USD)": budget,
         "Request Date": formattedDate,
       },
