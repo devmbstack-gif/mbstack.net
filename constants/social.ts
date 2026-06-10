@@ -1,27 +1,27 @@
 export const SOCIAL_LINKS = [
   {
     label: "Facebook",
-    href: "http://www.facebook.com/mbsoftsolution/",
+    href: "https://www.facebook.com/share/1BbLZcYdDo/?mibextid=wwXIfr",
     icon: "facebook",
   },
-  {
-    label: "Twitter",
-    href: "https://twitter.com",
-    icon: "twitter",
-  },
+  // {
+  //   label: "Twitter",
+  //   href: "https://twitter.com",
+  //   icon: "twitter",
+  // },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/company/mb-soft-solution/",
+    href: "https://www.linkedin.com/company/mb-stack/",
     icon: "linkedin",
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/mbsoftsolution_official/?igshid=OGQ5ZDc2ODk2ZA%3D%3D",
+    href: "https://www.instagram.com/mbstack_official?igsh=cWRyNW83dXBpc3Q3",
     icon: "instagram",
   },
   {
     label: "YouTube",
-    href: "https://www.youtube.com/@mbsoftsolutionllc",
+    href: "https://youtube.com/@mbstack?si=Vq6Q907Ll2f3Ytzi",
     icon: "youtube",
   },
 ] as const;

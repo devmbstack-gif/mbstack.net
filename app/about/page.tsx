@@ -6,11 +6,11 @@ import { SITE_URL } from "@/constants";
 export const metadata = {
   title: "About Us",
   description:
-    "MB Soft Solution is a high-performance software house. We build full-stack applications that scale and solve business problems with modern tech.",
+    "MB Stack is a high-performance software house. We build full-stack applications that scale and solve business problems with modern tech.",
   openGraph: {
     title: "About Us",
     description:
-      "We build the foundation for your digital growth. Modern stack, transparent process, and unparalleled growth with MB Soft Solution.",
+      "We build the foundation for your digital growth. Modern stack, transparent process, and unparalleled growth with MB Stack.",
     url: `${SITE_URL}/about`,
   },
   alternates: { canonical: `${SITE_URL}/about` },

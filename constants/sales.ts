@@ -138,7 +138,7 @@ export const SALES = {
           "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
       },
       {
-        clientName: "Dr. Al Hammad",
+        clientName: "Dr. Ayman",
         problem: " he was a senior project manager on their company but he did not have system to manage their projects and saas",
         solution: "we offered the our services of talented team we worked multiple projects of AI and SAAS tools development. Also Automations projects",
         result: "the projects was facing crysing but after our developed platforms this beat millions of Saudi Reyals revenue in saudi market.",

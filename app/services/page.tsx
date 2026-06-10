@@ -6,7 +6,7 @@ import { SITE_URL } from "@/constants";
 export const metadata = {
   title: "Our Services",
   description:
-    "Web development, mobile apps, AI, SEO, and digital marketing. Scalable solutions for modern digital challenges from MB Soft Solution.",
+    "Web development, mobile apps, AI, SEO, and digital marketing. Scalable solutions for modern digital challenges from MB Stack.",
   openGraph: {
     title: "Our Services",
     description:

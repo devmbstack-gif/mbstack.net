@@ -1,5 +1,5 @@
 export const SITE = {
-  name: "MB Soft Solution",
+  name: "MB Stack",
   tagline: "IT Solutions Company",
   description:
     "MB Stack is a dynamic IT software solutions and development company at the forefront of technological innovation.",
@@ -66,17 +66,17 @@ export const HERO_CLIENT_IMAGES = [
 ] as const;
 
 export const LIVE_COUNTRIES = [
-  { name: "Pakistan", flag: "🇵🇰" },
-  { name: "Saudi Arabia", flag: "🇸🇦" },
-  { name: "United Arabs Emirate", flag: "🇦🇪" },
-  { name: "United States of America", flag: "🇺🇸" },
+  { name: "Pakistan", shortName: "Pakistan", flagCode: "pk" },
+  { name: "Saudi Arabia", shortName: "KSA", flagCode: "sa" },
+  { name: "United Arabs Emirate", shortName: "UAE", flagCode: "ae" },
+  { name: "United States of America", shortName: "USA", flagCode: "us" },
 ] as const;
 
 export const COMPANY_STATS = {
-  projectsCompleted: 500,
-  happyClients: 100,
+  projectsCompleted: 50,
+  happyClients:50,
   companiesServed: 50,
-  teamMembers: 20,
+  teamMembers: 15,
   yearsExperience: 10,
 } as const;
 
@@ -95,7 +95,7 @@ export const PORTFOLIO_LINK = {
 export const CONSULTANCY_BANNER = {
   title: "Get Free Consultancy",
   subtitle:
-    "Empower Your Growth with MB Soft Solution's Custom Software Solutions.",
+    "Empower Your Growth with MB Stack's Custom Software Solutions.",
   ctaLabel: "Get Now",
   href: "/consultancy",
 } as const;
@@ -147,16 +147,16 @@ export const SERVICES = [
 
 export const FOOTER = {
   companyDescription:
-    "MB Soft Solution is a software company providing IT solutions. We offer development services, digital marketing, SEO, IT consulting, managed services, IT outsourcing, project management, and more.",
+    "MB Stack is a software company providing IT solutions. We offer development services, digital marketing, SEO, IT consulting, managed services, IT outsourcing, project management, and more.",
   addresses: [
-    "Baghbanpura Chowk, Hafizabad Road, Gujranwala, Pakistan.",
+    "1st floor, Bhutta Plaza, Near Islamia College Road, Gujranwala, Pakistan.",
     "444 Alaska Avenue, Suite #BBC525, Torrance, CA 90503 USA.",
   ],
   helplines: [
     "+92 316 1465299 | +1 838 2131775",
     "+92 347 9516266 | +92 55 4251078",
   ],
-  email: "info@mbsoftsolution.com",
+  email: "info@mbstack.net",
   supportLinks: [
     { label: "About Us", href: "/about" },
     { label: "Join Us", href: "/sales" },
@@ -173,8 +173,8 @@ export const FOOTER = {
     { label: "Terms of Service", href: "/privacy" },
   ],
   copyright:
-    "Copyright © 2022-2026 MBStack LLC | Software Development Company",
-  whatsappNumber: "+923479516266", // e.g. '923161465299' for WhatsApp link
+    "Copyright © 2022-2026 MB Stack | Software Development Company",
+  whatsappNumber: "+923161465299", // e.g. '923161465299' for WhatsApp link
   chatLabel: "Chat with us",
 } as const;
 

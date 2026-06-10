@@ -99,20 +99,19 @@ export default function SalesSuccessStories() {
           <div className="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-stone-50 to-transparent z-10" />
           <div className="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-stone-50 to-transparent z-10" />
 
-          <div className="flex partners-tech-slider-track gap-20 py-4">
+          <div className="flex partners-tech-slider-track items-center gap-8 sm:gap-12 py-4">
             {repeatedLogos.map((logo, idx) => (
               <div
                 key={idx}
-                className="flex-shrink-0 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition-all duration-300"
+                className="flex-shrink-0 flex items-center justify-center w-28 h-28 sm:w-32 sm:h-32 rounded-xl border border-stone-200/70 bg-white grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
               >
-                <div className="h-14 md:h-16 relative w-40 md:w-52">
-                  <Image
-                    src={logo.logo}
-                    alt={logo.name}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
+                <Image
+                  src={logo.logo}
+                  alt={logo.name}
+                  width={112}
+                  height={112}
+                  className="w-[75%] h-[75%] object-contain object-center"
+                />
               </div>
             ))}
           </div>

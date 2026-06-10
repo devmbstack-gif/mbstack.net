@@ -6,7 +6,7 @@ import SocialIcons from "./SocialIcons";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden py-16 bg-white">
+    <section className="relative flex flex-col items-center overflow-hidden pt-24 pb-6 sm:pt-28 sm:pb-8 bg-white">
       <div className="relative z-0 w-full max-w-4xl mx-auto px-4 sm:px-6">
         {/* Grid only - no gradient */}
         <div
@@ -113,7 +113,7 @@ export default function Hero() {
           </div>
 
           {/* Social */}
-          <div className="mt-5 pt-8 border-t border-stone-100">
+          <div className="mt-4 pt-4 border-t border-stone-100">
             <p className="text-xs font-medium text-stone-400 uppercase tracking-wider mb-3">
               Follow us
             </p>

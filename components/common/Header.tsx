@@ -47,7 +47,7 @@ export default function Header() {
             <Link href="/" className="flex-shrink-0 flex items-center gap-2">
               <Image
                 src="/logo.png"
-                alt="MB Soft Solution"
+                alt="MB Stack"
                 width={140}
                 height={44}
                 className="h-10 w-auto object-contain"

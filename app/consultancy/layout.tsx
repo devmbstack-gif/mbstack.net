@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Get Consultancy",
   description:
-    "Book a free 30-minute technical consultancy with MB Soft Solution. Tech stack audit, scalability plan, timeline estimate, and expert advice.",
+    "Book a free 30-minute technical consultancy with MB Stack. Tech stack audit, scalability plan, timeline estimate, and expert advice.",
   openGraph: {
     title: "Expert Strategy Session – Free Consultancy",
     description:

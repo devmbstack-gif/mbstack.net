@@ -75,10 +75,10 @@ export default function SalesHero() {
         <div className="mb-12">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
               {Object.entries({
-                "Projects Completed": "500+",
-                "Happy Clients": "100+",
-                "Team Members": "20+",
-                "Years Experience": "10+"
+                "Projects Completed": "50+",
+                "Happy Clients": "50+",
+                "Team Members": "15+",
+                "Years Experience": "8+"
               }).map(([label, value]) => (
                 <div key={label} className="text-center">
                   <div className="text-3xl sm:text-4xl font-bold text-[#31B574]">

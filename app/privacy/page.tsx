@@ -4,7 +4,7 @@ import { SITE_URL } from "@/constants";
 export const metadata = {
   title: "Privacy Policy",
   description:
-    "Privacy policy and terms of service for MB Soft Solution. How we collect, use, and protect your information.",
+    "Privacy policy and terms of service for MB Stack. How we collect, use, and protect your information.",
   openGraph: {
     title: "Privacy Policy",
     url: `${SITE_URL}/privacy`,

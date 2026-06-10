@@ -6,7 +6,7 @@ import Image from "next/image";
 export const metadata = {
   title: "Our Team",
   description:
-    "Meet the experts at MB Soft Solution. Driven by innovation, defined by our people. Specialists dedicated to your digital growth.",
+    "Meet the experts at MB Stack. Driven by innovation, defined by our people. Specialists dedicated to your digital growth.",
   openGraph: {
     title: "Our Team",
     description: "The faces behind MBStack – innovation and growth.",
