@@ -1,0 +1,37 @@
+name: Deploy
+
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy-status:
+    runs-on: ubuntu-latest
+    if: >
+      github.event_name == 'workflow_run' &&
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.head_branch == 'main'
+    steps:
+      - name: VPS cron will deploy within ~1 minute
+        run: |
+          echo "CI passed on main."
+          echo "VPS cron polls GitHub every minute and runs server-deploy.sh when origin/main is ahead."
+          echo "Server log: /var/log/mbstack-deploy.log"
+
+  deploy-now:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch'
+    steps:
+      - name: Trigger instant deploy on VPS
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          script: |
+            export FORCE_DEPLOY=1
+            export VPS_APP_PATH=/opt/mbstack
+            bash /opt/mbstack/deploy/scripts/server-deploy.sh
