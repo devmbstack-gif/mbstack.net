@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #31b574;
+  --color-brand-light: #31b5741a;
+  --color-brand-dark: #2a9d63;
+  --color-brand-text: #31b574;
+  --color-brand-text-light: #31b574;
+  --color-brand-text-dark: #31b574;
+}
+
+/* Base responsive & accessibility */
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: clip;
+  min-height: 100dvh;
+}
+
+/* Consistent page layout utilities */
+.page-container {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: max(1rem, env(safe-area-inset-left))
+    max(1rem, env(safe-area-inset-right));
+}
+
+@media (min-width: 640px) {
+  .page-container {
+    padding-inline: max(1.5rem, env(safe-area-inset-left))
+      max(1.5rem, env(safe-area-inset-right));
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-container {
+    padding-inline: max(2rem, env(safe-area-inset-left))
+      max(2rem, env(safe-area-inset-right));
+  }
+}
+
+.section-padding {
+  padding-block: 3rem;
+}
+
+@media (min-width: 640px) {
+  .section-padding {
+    padding-block: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-block: 5rem;
+  }
+}
+
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+
+.safe-bottom {
+  padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+}
+
+/* Better touch feedback on mobile */
+@media (hover: none) and (pointer: coarse) {
+  a,
+  button {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Reserve space for floating WhatsApp widget */
+.floating-widget-pad {
+  padding-bottom: calc(5.5rem + env(safe-area-inset-bottom));
+}
+
+@keyframes dot-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(49, 181, 116, 0.5);
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(49, 181, 116, 0);
+    opacity: 0.9;
+  }
+}
+
+.hero-dot-glow {
+  animation: dot-pulse 2s ease-in-out infinite;
+}
+
+.testimonials-slider-track::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes logo-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.partners-tech-slider-track {
+  animation: logo-scroll 40s linear infinite;
+}
+
+.partners-tech-slider-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-dot-glow,
+  .partners-tech-slider-track,
+  .animate-fade-in {
+    animation: none;
+  }
+}
