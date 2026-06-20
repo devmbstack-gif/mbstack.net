@@ -6,8 +6,6 @@ export const SALES = {
     description:
       "We help you scale your business with custom software development, mobile apps, and AI solutions - with full support from concept to deployment and beyond.",
     videoYoutubeId: "OGfRr9Zv2xo",
-    cta: "Get Started Now",
-    ctaHref: "/consultancy",
     trustAvatars: [
       { name: "Client", image: "/team/5.png" },
       { name: "Client", image: "/team/6.png" },

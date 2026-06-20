@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { SALES } from "@/constants";
 
@@ -104,17 +103,11 @@ export default function SalesHero() {
                 allowFullScreen
               />
 
-              {!isPinned ? (
-                <div className="pointer-events-none absolute bottom-8 left-1/2 -translate-x-1/2">
-                  <div className="inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3 text-base font-bold text-white shadow-lg">
-                    {SALES.hero.cta} →
-                  </div>
-                </div>
-              ) : (
+              {isPinned ? (
                 <div className="pointer-events-none absolute bottom-2 left-2 rounded-full bg-brand/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-white">
                   Now playing
                 </div>
-              )}
+              ) : null}
             </div>
           </div>
 
@@ -137,12 +130,6 @@ export default function SalesHero() {
           </div>
 
           <div className="mt-12 flex flex-col items-center gap-6">
-            <Link
-              href={SALES.hero.ctaHref}
-              className="inline-flex w-full md:w-auto min-h-12 items-center justify-center rounded-full bg-brand px-10 py-5 text-xl font-extrabold text-white shadow-xl transition-all hover:scale-105 hover:bg-brand-dark"
-            >
-              {SALES.hero.cta}
-            </Link>
             <div className="flex items-center gap-3">
               <div className="flex -space-x-2">
                 {SALES.hero.trustAvatars.map((avatar) => (
