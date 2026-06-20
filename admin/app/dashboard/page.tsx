@@ -64,12 +64,14 @@ export default function DashboardPage() {
         </div>
       ) : null}
 
-      <div className="mb-6 flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
+      <div className="mb-4 flex flex-wrap items-center gap-2 text-sm text-muted-foreground sm:mb-6 sm:gap-3">
         <Tooltip>
           <TooltipTrigger asChild>
-            <span className="inline-flex items-center gap-2 rounded-full border bg-white/80 px-4 py-2 shadow-sm">
-              <Clock3 className="h-4 w-4 text-primary" />
-              Last updated: {lastUpdated ? formatDate(lastUpdated) : "—"}
+            <span className="inline-flex max-w-full items-center gap-2 rounded-full border bg-white/80 px-3 py-2 text-xs shadow-sm sm:px-4 sm:text-sm">
+              <Clock3 className="h-4 w-4 shrink-0 text-primary" />
+              <span className="truncate">
+                Last updated: {lastUpdated ? formatDate(lastUpdated) : "—"}
+              </span>
             </span>
           </TooltipTrigger>
           <TooltipContent>
@@ -79,13 +81,13 @@ export default function DashboardPage() {
       </div>
 
       {loading && !stats ? (
-        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           {Array.from({ length: 4 }).map((_, index) => (
             <Skeleton key={index} className="h-36" />
           ))}
         </div>
       ) : (
-        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           <StatCard3D
             label="Contact Inquiries"
             value={stats?.contacts ?? 0}
@@ -130,10 +132,10 @@ export default function DashboardPage() {
         </div>
 
         <Card className="card-3d border-0">
-          <CardHeader>
-            <CardTitle>Pipeline Health</CardTitle>
+          <CardHeader className="px-4 sm:px-6">
+            <CardTitle className="text-lg sm:text-xl">Pipeline Health</CardTitle>
           </CardHeader>
-          <CardContent className="space-y-6">
+          <CardContent className="space-y-5 px-4 sm:space-y-6 sm:px-6">
             <div>
               <div className="mb-2 flex items-center justify-between text-sm">
                 <span className="font-medium">Completion Rate</span>

@@ -32,12 +32,23 @@ export default function StatusChart({
       <CardHeader>
         <CardTitle>Inquiry Pipeline Overview</CardTitle>
       </CardHeader>
-      <CardContent className="h-72">
+      <CardContent className="h-56 sm:h-64 lg:h-72">
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={data} barSize={42}>
+          <BarChart data={data} barSize={32} margin={{ left: -12, right: 8 }}>
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
-            <XAxis dataKey="name" axisLine={false} tickLine={false} />
-            <YAxis allowDecimals={false} axisLine={false} tickLine={false} />
+            <XAxis
+              dataKey="name"
+              axisLine={false}
+              tickLine={false}
+              tick={{ fontSize: 12 }}
+            />
+            <YAxis
+              allowDecimals={false}
+              axisLine={false}
+              tickLine={false}
+              width={28}
+              tick={{ fontSize: 12 }}
+            />
             <RechartsTooltip
               cursor={{ fill: "rgba(49,181,116,0.08)" }}
               contentStyle={{

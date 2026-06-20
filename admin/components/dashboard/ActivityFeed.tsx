@@ -36,11 +36,11 @@ export default function ActivityFeed({
 
   return (
     <Card className="card-3d border-0">
-      <CardHeader>
-        <CardTitle>Recent Activity</CardTitle>
+      <CardHeader className="px-4 sm:px-6">
+        <CardTitle className="text-lg sm:text-xl">Recent Activity</CardTitle>
       </CardHeader>
-      <CardContent>
-        <ScrollArea className="h-80 pr-4">
+      <CardContent className="px-4 sm:px-6">
+        <ScrollArea className="h-72 pr-2 sm:h-80 sm:pr-4">
           <div className="space-y-4">
             {activity.length === 0 ? (
               <p className="text-sm text-muted-foreground">
@@ -50,7 +50,7 @@ export default function ActivityFeed({
             {activity.map((item) => (
               <div
                 key={`${item.kind}-${item.id}`}
-                className="flex gap-3 rounded-2xl border bg-white/70 p-4 shadow-sm"
+                className="flex gap-3 rounded-2xl border bg-white/70 p-3 shadow-sm sm:p-4"
               >
                 <Avatar>
                   <AvatarFallback>{getInitials(item.name)}</AvatarFallback>

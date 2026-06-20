@@ -28,13 +28,13 @@ export default function StatCard3D({
     <Tooltip>
       <TooltipTrigger asChild>
         <Card className={cn("card-3d overflow-hidden border-0", accent)}>
-          <CardContent className="p-6">
-            <div className="flex items-start justify-between gap-4">
-              <div>
-                <p className="text-sm font-medium text-muted-foreground">
+          <CardContent className="p-4 sm:p-6">
+            <div className="flex items-start justify-between gap-3 sm:gap-4">
+              <div className="min-w-0">
+                <p className="text-xs font-medium text-muted-foreground sm:text-sm">
                   {label}
                 </p>
-                <p className="mt-3 text-4xl font-black tracking-tight">
+                <p className="mt-2 text-3xl font-black tracking-tight sm:mt-3 sm:text-4xl">
                   {value}
                 </p>
                 {trend ? (
@@ -43,8 +43,8 @@ export default function StatCard3D({
                   </p>
                 ) : null}
               </div>
-              <div className="rounded-2xl bg-white/80 p-3 shadow-inner">
-                <Icon className="h-6 w-6 text-primary" />
+              <div className="shrink-0 rounded-2xl bg-white/80 p-2.5 shadow-inner sm:p-3">
+                <Icon className="h-5 w-5 text-primary sm:h-6 sm:w-6" />
               </div>
             </div>
           </CardContent>

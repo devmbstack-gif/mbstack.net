@@ -16,6 +16,24 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
+const featureItems = [
+  {
+    icon: ShieldCheck,
+    title: "Secure",
+    text: "API key protected access",
+  },
+  {
+    icon: LockKeyhole,
+    title: "Private",
+    text: "Session-based admin auth",
+  },
+  {
+    icon: KeyRound,
+    title: "Controlled",
+    text: "Role-ready architecture",
+  },
+];
+
 export default function LoginPage() {
   const router = useRouter();
   const dispatch = useAppDispatch();
@@ -40,9 +58,9 @@ export default function LoginPage() {
   }
 
   return (
-    <main className="mesh-bg min-h-screen flex items-center justify-center p-4">
-      <div className="grid w-full max-w-5xl gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-        <section className="hidden rounded-[2rem] border border-white/60 bg-white/70 p-10 shadow-2xl backdrop-blur-xl lg:block card-3d">
+    <main className="mesh-bg safe-bottom safe-top flex min-h-screen min-h-dvh items-center justify-center p-4 sm:p-6">
+      <div className="grid w-full max-w-5xl gap-6 sm:gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+        <section className="hidden rounded-[2rem] border border-white/60 bg-white/70 p-8 shadow-2xl backdrop-blur-xl lg:block card-3d">
           <div className="flex h-full flex-col justify-between">
             <div>
               <Image
@@ -66,23 +84,7 @@ export default function LoginPage() {
               </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-3">
-              {[
-                {
-                  icon: ShieldCheck,
-                  title: "Secure",
-                  text: "API key protected access",
-                },
-                {
-                  icon: LockKeyhole,
-                  title: "Private",
-                  text: "Session-based admin auth",
-                },
-                {
-                  icon: KeyRound,
-                  title: "Controlled",
-                  text: "Role-ready architecture",
-                },
-              ].map((item) => (
+              {featureItems.map((item) => (
                 <Tooltip key={item.title}>
                   <TooltipTrigger asChild>
                     <div className="rounded-2xl border bg-white/80 p-4 shadow-sm">
@@ -100,8 +102,8 @@ export default function LoginPage() {
           </div>
         </section>
 
-        <Card className="card-3d border-0 shadow-2xl">
-          <CardHeader>
+        <Card className="card-3d w-full border-0 shadow-2xl">
+          <CardHeader className="px-4 sm:px-6">
             <Image
               src="/logo.png"
               alt="MB Stack"
@@ -110,12 +112,26 @@ export default function LoginPage() {
               className="mb-4 h-10 w-auto object-contain lg:hidden"
               priority
             />
-            <CardTitle className="text-2xl">Sign in to Admin</CardTitle>
+            <CardTitle className="text-xl sm:text-2xl">
+              Sign in to Admin
+            </CardTitle>
             <p className="text-sm text-muted-foreground">
               Enter your backend `ADMIN_API_KEY` to access the dashboard.
             </p>
           </CardHeader>
-          <CardContent>
+          <CardContent className="px-4 sm:px-6">
+            <div className="mb-5 grid gap-3 sm:grid-cols-3 lg:hidden">
+              {featureItems.map((item) => (
+                <div
+                  key={item.title}
+                  className="rounded-2xl border bg-white/70 p-3 text-center shadow-sm"
+                >
+                  <item.icon className="mx-auto h-4 w-4 text-primary" />
+                  <p className="mt-2 text-xs font-bold">{item.title}</p>
+                </div>
+              ))}
+            </div>
+
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="space-y-2">
                 <label
@@ -131,6 +147,7 @@ export default function LoginPage() {
                   onChange={(e) => setApiKey(e.target.value)}
                   required
                   placeholder="Enter ADMIN_API_KEY"
+                  autoComplete="current-password"
                 />
               </div>
 
