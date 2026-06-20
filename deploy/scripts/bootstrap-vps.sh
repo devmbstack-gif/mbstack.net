@@ -40,7 +40,7 @@ ADMIN_KEY="$(openssl rand -hex 24)"
 if [ ! -f "$APP_DIR/backend/.env" ]; then
   cat >"$APP_DIR/backend/.env" <<EOF
 PORT=3711
-DATABASE_URL="postgresql://mbstack_net:${DB_PASS}@localhost:5432/mbstack_net"
+DATABASE_URL="postgresql://mbstack_net:${DB_PASS}@localhost:5433/mbstack_net"
 FRONTEND_URL="https://mbstack.net"
 ADMIN_URL="https://admin.mbstack.net"
 ADMIN_API_KEY="${ADMIN_KEY}"

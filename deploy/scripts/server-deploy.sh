@@ -87,6 +87,10 @@ sync_nginx() {
   local nginx_bin="/www/server/nginx/sbin/nginx"
   local vhost_dir="/www/server/panel/vhost/nginx"
 
+  if [ -x "$APP_DIR/deploy/scripts/setup-temp-ssl.sh" ]; then
+    bash "$APP_DIR/deploy/scripts/setup-temp-ssl.sh" 2>/dev/null || true
+  fi
+
   if [ -d "$APP_DIR/deploy/nginx" ]; then
     for conf in mbstack.net.conf api.mbstack.net.conf admin.mbstack.net.conf; do
       if [ -f "$APP_DIR/deploy/nginx/$conf" ]; then
