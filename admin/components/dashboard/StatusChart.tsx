@@ -29,8 +29,10 @@ export default function StatusChart({
 
   return (
     <Card className="card-3d border-0">
-      <CardHeader>
-        <CardTitle>Inquiry Pipeline Overview</CardTitle>
+      <CardHeader className="px-4 sm:px-6">
+        <CardTitle className="text-lg sm:text-xl">
+          Inquiry Pipeline Overview
+        </CardTitle>
       </CardHeader>
       <CardContent className="h-56 sm:h-64 lg:h-72">
         <ResponsiveContainer width="100%" height="100%">

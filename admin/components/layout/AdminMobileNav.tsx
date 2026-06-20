@@ -24,8 +24,8 @@ export default function AdminMobileNav({
   return (
     <Dialog.Root open={open} onOpenChange={onOpenChange}>
       <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 z-40 bg-slate-950/60 backdrop-blur-sm data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0" />
-        <Dialog.Content className="fixed inset-y-0 left-0 z-50 flex w-[min(100vw-3rem,20rem)] flex-col outline-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left">
+        <Dialog.Overlay className="fixed inset-0 z-40 bg-slate-950/60 backdrop-blur-sm" />
+        <Dialog.Content className="fixed inset-y-0 left-0 z-50 flex w-[min(100vw-3rem,20rem)] flex-col outline-none transition-transform duration-300 data-[state=closed]:-translate-x-full">
           <aside className="sidebar-panel flex h-full flex-col text-white">
             <div className="flex items-start justify-between gap-3 p-5 pb-4">
               <div>
