@@ -1,4 +1,14 @@
-const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3701/api";
+function resolveApiUrl(): string {
+  if (process.env.NEXT_PUBLIC_API_URL) {
+    return process.env.NEXT_PUBLIC_API_URL;
+  }
+  if (process.env.NODE_ENV === "production") {
+    return "https://mbstack.net/api";
+  }
+  return "http://localhost:3701/api";
+}
+
+const API_URL = resolveApiUrl();
 
 export function getAdminKey(): string | null {
   if (typeof window === "undefined") return null;
