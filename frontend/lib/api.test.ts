@@ -36,7 +36,7 @@ describe("frontend api client", () => {
     });
 
     expect(global.fetch).toHaveBeenCalledWith(
-      "http://localhost:3701/api/contact",
+      "/api/contact",
       expect.objectContaining({ method: "POST" }),
     );
   });

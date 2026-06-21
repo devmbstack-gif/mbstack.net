@@ -242,7 +242,7 @@ export const SALES = {
         company: "Howwe Ecosystem · Saudi Arabia",
         region: "Saudi Arabia",
         industry: "Art · E-Commerce · Auctions",
-        clientImage: "/case-studies/in Gallery.jpeg",
+        clientImage: "/case-studies/ingallery-logo.jpeg",
         clientImageVariant: "logo",
         projectImage: "/portfolios/ingallery.webp",
         metric: "Live Auctions",

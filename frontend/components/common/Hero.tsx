@@ -53,22 +53,26 @@ export default function Hero() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 mt-6 sm:mt-8 min-h-16 sm:h-20">
-            <div className="flex justify-center -space-x-3" aria-label="Trusted client logos">
-              {HERO_TRUSTED_CLIENTS.map((client) => (
+            <div
+              className="flex justify-center -space-x-2.5 sm:-space-x-3"
+              aria-label="Trusted client testimonials"
+            >
+              {HERO_TRUSTED_CLIENTS.map((client, index) => (
                 <div
                   key={client.name}
-                  className="relative w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white bg-white overflow-hidden shadow-md ring-2 ring-stone-200/50"
+                  className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full border-2 border-white bg-stone-100 overflow-hidden shadow-md ring-2 ring-stone-200/60 transition-transform duration-300 hover:scale-110 hover:z-10"
+                  style={{ zIndex: HERO_TRUSTED_CLIENTS.length - index }}
                   title={client.name}
                 >
                   <Image
                     src={client.src}
                     alt={client.name}
-                    width={46}
-                    height={46}
+                    width={48}
+                    height={48}
                     className={`w-full h-full ${
                       client.variant === "logo"
                         ? "object-contain p-1"
-                        : "object-cover"
+                        : "object-cover object-top"
                     }`}
                   />
                 </div>

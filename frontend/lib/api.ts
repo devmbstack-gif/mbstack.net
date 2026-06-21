@@ -2,10 +2,7 @@ function resolveApiUrl(): string {
   if (process.env.NEXT_PUBLIC_API_URL) {
     return process.env.NEXT_PUBLIC_API_URL;
   }
-  if (process.env.NODE_ENV === "production") {
-    return "/api";
-  }
-  return "http://localhost:3701/api";
+  return "/api";
 }
 
 const API_URL = resolveApiUrl();

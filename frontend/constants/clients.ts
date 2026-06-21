@@ -6,27 +6,32 @@ export interface HeroTrustedClient {
   variant: ClientImageVariant;
 }
 
-/** Client logos shown in the homepage hero "Trusted by Clients" stack. */
+/** Client faces shown in the homepage hero "Trusted by Clients" stack. */
 export const HERO_TRUSTED_CLIENTS: HeroTrustedClient[] = [
   {
-    src: "/skillsAndComapies/howwe.webp",
-    name: "Howwe",
-    variant: "logo",
+    src: "/dr ayman.jpeg",
+    name: "Dr. Ayman Ali",
+    variant: "photo",
   },
   {
-    src: "/skillsAndComapies/growthtechz.webp",
-    name: "GrowthTechz",
-    variant: "logo",
+    src: "/testimonials/sohelarman20.png",
+    name: "Sohelarman20",
+    variant: "photo",
   },
   {
-    src: "/skillsAndComapies/dream city.webp",
-    name: "DreamCity Capital",
-    variant: "logo",
+    src: "/testimonials/zelimchankagiro.webp",
+    name: "Zelimchankagiro",
+    variant: "photo",
   },
   {
-    src: "/skillsAndComapies/Fressnel.webp",
-    name: "Fressnel",
-    variant: "logo",
+    src: "/testimonials/freaksonar.webp",
+    name: "Freaksonar",
+    variant: "photo",
+  },
+  {
+    src: "/testimonials/bilalax.webp",
+    name: "Bilalax",
+    variant: "photo",
   },
 ];
 
@@ -151,7 +156,7 @@ export const CLIENT_PROJECT_RESULTS: ClientProjectResult[] = [
     result:
       "Slow manual art trading → Optimized marketplace with secure artist-to-collector connections",
     image: "/portfolios/ingallery.webp",
-    clientLogo: "/case-studies/in Gallery.jpeg",
+    clientLogo: "/case-studies/ingallery-logo.jpeg",
     clientLogoVariant: "logo",
   },
   {

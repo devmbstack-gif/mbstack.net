@@ -139,7 +139,8 @@ body {
 
   .hero-dot-glow,
   .partners-tech-slider-track,
-  .animate-fade-in {
+  .animate-fade-in,
+  .ig-live-pulse {
     animation: none;
   }
 }

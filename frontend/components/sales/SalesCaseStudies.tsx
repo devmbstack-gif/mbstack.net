@@ -17,6 +17,8 @@ import {
   Users,
 } from "lucide-react";
 import { SALES } from "@/constants";
+import DreamCityCasePreview from "@/components/sales/previews/DreamCityCasePreview";
+import InGalleryCasePreview from "@/components/sales/previews/InGalleryCasePreview";
 
 type PortfolioProject = {
   name: string;
@@ -153,6 +155,8 @@ export default function SalesCaseStudies() {
               "projects" in study && study.projects ? study.projects : undefined;
             const hasScreenshot = Boolean(study.projectImage);
             const isPortfolio = Boolean(projects);
+            const isDreamCity = study.id === "dreamcity-capital";
+            const isInGallery = study.id === "ingallery";
 
             return (
               <article
@@ -168,6 +172,22 @@ export default function SalesCaseStudies() {
                         clientName={study.clientName}
                         clientImage={study.clientImage}
                         projects={projects!}
+                        metric={study.metric}
+                        metricLabel={study.metricLabel}
+                      />
+                    ) : isDreamCity ? (
+                      <DreamCityCasePreview
+                        clientName={study.clientName}
+                        clientImage={study.clientImage}
+                        projectImage={study.projectImage}
+                        metric={study.metric}
+                        metricLabel={study.metricLabel}
+                      />
+                    ) : isInGallery ? (
+                      <InGalleryCasePreview
+                        clientName={study.clientName}
+                        clientImage={study.clientImage}
+                        projectImage={study.projectImage}
                         metric={study.metric}
                         metricLabel={study.metricLabel}
                       />
