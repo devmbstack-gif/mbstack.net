@@ -138,7 +138,7 @@ export default function AboutPage() {
               <div className="min-w-0">
                 <h4 className="font-bold text-base sm:text-lg">Cutting-Edge Technology</h4>
                 <p className="text-slate-500 text-sm mt-1 leading-relaxed">
-                  We work with the latest tools—like Next.js and Prisma—staying at the
+                  We work with the latest tools, like Next.js and Prisma, staying at the
                   forefront of industry trends to craft exceptional solutions.
                 </p>
               </div>

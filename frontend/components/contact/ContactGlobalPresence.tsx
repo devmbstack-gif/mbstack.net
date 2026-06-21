@@ -14,7 +14,7 @@ export default function ContactGlobalPresence() {
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 max-w-xl mx-auto">
             We deliver software solutions across Pakistan, the Middle East, and North
-            America — with teams aligned to your timezone.
+            America, with teams aligned to your timezone.
           </p>
         </div>
 

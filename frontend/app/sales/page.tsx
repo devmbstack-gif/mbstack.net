@@ -4,7 +4,9 @@ import SalesTrustLogos from "@/components/sales/SalesTrustLogos";
 import SalesProblem from "@/components/sales/SalesProblem";
 import SalesExpectations from "@/components/sales/SalesExpectations";
 import SalesStickyCards from "@/components/sales/SalesStickyCards";
-import SalesTestimonials from "@/components/sales/SalesTestimonials";
+import SalesVision2030 from "@/components/sales/SalesVision2030";
+import SalesCaseStudies from "@/components/sales/SalesCaseStudies";
+import Testomonials from "@/components/sections/Testomonials";
 import SalesFaq from "@/components/sales/SalesFaq";
 import SalesCta from "@/components/sales/SalesCta";
 import { SITE_URL } from "@/constants";
@@ -30,7 +32,9 @@ export default function SalesPage() {
       <SalesProblem />
       <SalesExpectations />
       <SalesStickyCards />
-      <SalesTestimonials />
+      <SalesVision2030 />
+      <SalesCaseStudies />
+      <Testomonials />
       <SalesFaq />
       <SalesCta />
     </main>

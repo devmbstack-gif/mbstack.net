@@ -1,3 +1,5 @@
+﻿import { getPortfolioProjects } from "./portfolioCaseStudies";
+
 export const SITE = {
   name: "MB Stack",
   tagline: "IT Solutions Company",
@@ -19,7 +21,7 @@ export const SITE_URL =
 /** SEO defaults used in layout and page metadata. */
 export const SEO = {
   titleTemplate: `%s | ${SITE.name}`,
-  defaultTitle: `${SITE.name} – ${SITE.tagline}`,
+  defaultTitle: `${SITE.name} â€“ ${SITE.tagline}`,
   defaultDescription: SITE.description,
   keywords: [
     "software development",
@@ -147,8 +149,8 @@ export const FOOTER = {
     "444 Alaska Avenue, Suite #BBC525, Torrance, CA 90503 USA.",
   ],
   helplines: [
-    "+92 316 1465299 | +92 347 9516266",
-    "+92 347 9516266 | +92 55 4251078",
+    "+92 316 1465299",
+    "+92 347 9516266",
   ],
   email: "info@mbstack.net",
   supportLinks: [
@@ -167,7 +169,7 @@ export const FOOTER = {
     { label: "Terms of Service", href: "/privacy" },
   ],
   copyright:
-    "Copyright © 2022-2026 MB Stack | Software Development Company",
+    "Copyright Â© 2022-2026 MB Stack | Software Development Company",
   whatsappNumber: "+923161465299", // e.g. '923161465299' for WhatsApp link
   chatLabel: "Chat with us",
 } as const;
@@ -283,6 +285,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
 
 export interface Project {
   id: string;
+  slug: string;
   title: string;
   category: string;
   description: string;
@@ -291,125 +294,4 @@ export interface Project {
   tags: string[];
 }
 
-export const PROJECTS: Project[] = [
-  {
-    id: "1",
-    title: "In Gallery",
-    category: "Website & Software",
-    description:
-      "INGallery features inspiring digital art collections, connecting artists and collectors through a secure, seamless online experience.",
-    image: "/portfolios/ingallery.webp", // Place images in your public/portfolio folder
-    link: "https://artwork.mbsoftsolution.com/",
-    tags: ["Next.js", "Prisma", "Tailwind"],
-  },
-  {
-    id: "2",
-    title: "Ban Travel",
-    category: "Website & Software",
-    description:
-      "Ban Travel offers seamless booking, expert support, and unforgettable travel experiences anytime, anywhere stress-free.",
-    image: "/portfolios/ban travel.webp",
-    link: "https://mbsoftsolution.com/",
-    tags: ["React", "Recharts", "Brand-Design"],
-  },
-  {
-    id: "3",
-    title: "Growbit AI Powered Tool",
-    category: "Website & Software",
-    description:
-      "Growbit is an AI-powered tool streamlining HR by automating hiring, payroll, attendance, and performance management efficiently.",
-    image: "/portfolios/growbit ai.webp",
-    link: "https://hrgrowbit.com/",
-    tags: ["SEO", "Performance", "Next.js"],
-  },
-  {
-    id: "4",
-    title: "Al Alim",
-    category: "ai",
-    description:
-      "Unlock your potential with expert-led tutoring. Start your learning journey today for a brighter, smarter tomorrow.",
-    image: "/portfolios/ai alim.webp",
-    link: "https://alim.mbsoftsolution.com/",
-    tags: ["SEO", "AI", "Next.js"],
-  },
-  {
-    id: "5",
-    title: "Lumoganic",
-    category: "Website & Software",
-    description:
-      "Lumoganic provides eco-friendly, cruelty-free skincare made with natural herbs—free from chemicals, toxins, and parabens.",
-    image: "/portfolios/lumoganic.webp",
-    link: "https://www.lumoganic.com/",
-    tags: ["SEO", "AI", "Next.js"],
-  },
-  {
-    id: "6",
-    title: "Online Derma",
-    category: "Website & Software",
-    description:
-      "Online Derma Expert offers skincare at your fingertips—consult certified dermatologists anytime, anywhere for personalized solutions.",
-    image: "/portfolios/online derma.webp",
-    link: "https://derma.mbsoftsolution.com/home",
-    tags: ["SEO", "AI", "Next.js"],
-  },
-  {
-    id: "7",
-    title: "Real Taxi",
-    category: "Website & Software",
-    description:
-      "RealTaxi Your seamless city travel companion. Book rides instantly, explore freely, and enjoy stress-free journeys.",
-    image: "/portfolios/real taxi.webp",
-    link: "https://realtaxi.es/",
-    tags: ["SEO", "AI", "Next.js"],
-  },
-  {
-    id: "8",
-    title: "Lucky APK",
-    category: "Mobile Apps",
-    description:
-      "Download Lucky APK for seamless app customization, premium feature unlocking, and a personalized mobile experience.",
-    image: "/portfolios/lucky apk.webp",
-    link: "https://luckypatchersapk.tech/",
-    tags: ["Figma", "AI", "Flutter"],
-  },
-  {
-    id: "9",
-    title: "Null APK",
-    category: "Mobile Apps",
-    description:
-      "Download Null’s Brawl APK for unlimited gems, custom servers, exclusive skins, and thrilling Brawl Stars gameplay.",
-    image: "/portfolios/null apk.webp",
-    link: "https://nullsbrawl.tech/",
-    tags: ["Figma", "AI", "Flutter"],
-  },
-  {
-    id: "10",
-    title: "Shutre",
-    category: "Website & Software",
-    description:
-      "Shutre is Online Shopping mall, offering customers the products from top brands, and exceptional customer service.",
-    image: "/portfolios/shutre.webp",
-    link: "https://nile.mbsoftsolution.com/admin/home",
-    tags: ["Figma", "AI", "Laravel"],
-  },
-  {
-    id: "11",
-    title: "Fressnel",
-    category: "Website & Software",
-    description:
-      "Fressnel is a quiz management system that administers and evaluates quizzes for educators and trainers with ease.",
-    image: "/portfolios/fressnel.webp",
-    link: "https://nile.mbsoftsolution.com/admin/home",
-    tags: ["SEO", "Next.js", "Laravel"],
-  },
-  {
-    id: "12",
-    title: "DreamCity",
-    category: "Website & Software",
-    description:
-      "DreamCity Capital digital real-estate investment platform offers investment opportunities in pre-vetted real estate assets.",
-    image: "/portfolios/dreamcity.webp",
-    link: "https://nile.mbsoftsolution.com/admin/home",
-    tags: ["Figma", "React", "Laravel"],
-  },
-];
+export const PROJECTS: Project[] = getPortfolioProjects();

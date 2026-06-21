@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useState, useCallback, useEffect } from "react";
-import ClientAvatar from "@/components/common/ClientAvatar";
+import Image from "next/image";
 import { TESTIMONIALS } from "@/constants";
 
 function StarRating({ value }: { value: number }) {
@@ -113,20 +113,32 @@ export default function Testimonials() {
                   className="group flex-shrink-0 w-[min(85vw,340px)] sm:w-[calc(50%-0.5rem)] sm:min-w-[280px] lg:w-[calc(33.333%-1.25rem)] lg:min-w-[300px] snap-start flex flex-col bg-white rounded-2xl border border-stone-200/80 p-5 sm:p-6 md:p-8 shadow-sm hover:shadow-md hover:border-brand/30 transition-all duration-300"
                 >
                   <div className="flex flex-col items-center text-center">
-                    <ClientAvatar
-                      src={image}
-                      name={name}
-                      size={64}
-                      variant={imageVariant ?? "photo"}
-                      className="mb-1"
-                    />
+                    <div className="relative w-[72px] h-[72px] sm:w-20 sm:h-20 mb-3 overflow-hidden rounded-sm bg-stone-100 border border-stone-200/80">
+                      {image ? (
+                        <Image
+                          src={image}
+                          alt={name}
+                          fill
+                          className={
+                            imageVariant === "logo"
+                              ? "object-contain bg-white p-1.5"
+                              : "object-cover"
+                          }
+                          sizes="80px"
+                        />
+                      ) : (
+                        <span className="absolute inset-0 flex items-center justify-center bg-brand text-white text-sm font-semibold">
+                          {name.slice(0, 2).toUpperCase()}
+                        </span>
+                      )}
+                    </div>
                     <StarRating value={rating} />
                     <p className="mt-3 text-base font-semibold text-[#31B574]">
                       {title}
                     </p>
                     <p className="text-sm text-stone-500 mt-0.5">{name}</p>
                   </div>
-                  <blockquote className="mt-4 flex gap-2 text-left flex-1">
+                  <blockquote className="mt-4 flex gap-2 text-left flex-1 bg-stone-50 rounded-xl p-4 border border-stone-100">
                     <span className="text-3xl text-stone-200 font-serif leading-none select-none shrink-0">
                       &ldquo;
                     </span>

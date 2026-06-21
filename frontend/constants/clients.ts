@@ -101,7 +101,7 @@ export const CLIENT_SUCCESS_STORIES: ClientSuccessStory[] = [
     result:
       "Previously struggling products became multi-million SAR revenue streams in the Saudi market.",
     quote:
-      "They brought structure to complex AI and SaaS delivery — speed, quality, and measurable outcomes.",
+      "They brought structure to complex AI and SaaS delivery, speed, quality, and measurable outcomes.",
   },
   {
     clientName: "GrowthTechz",
@@ -151,7 +151,7 @@ export const CLIENT_PROJECT_RESULTS: ClientProjectResult[] = [
     result:
       "Slow manual art trading → Optimized marketplace with secure artist-to-collector connections",
     image: "/portfolios/ingallery.webp",
-    clientLogo: "/skillsAndComapies/howwe.webp",
+    clientLogo: "/case-studies/in Gallery.jpeg",
     clientLogoVariant: "logo",
   },
   {
@@ -178,51 +178,75 @@ export const CLIENT_PROJECT_RESULTS: ClientProjectResult[] = [
   },
 ];
 
-/** Homepage testimonial slider — mix of company clients and freelance partners. */
+/** Homepage + sales page testimonial slider, imported from mbsoftsolution.com. */
 export const HOME_TESTIMONIALS: ClientTestimonial[] = [
   {
-    image: "/skillsAndComapies/howwe.webp",
-    imageVariant: "logo",
-    name: "Howwe · Saudi Arabia",
-    title: "Artist Booking Platform",
-    rating: 5,
-    quote:
-      "Quality platform development with timely delivery for the Saudi market — highly recommended!",
-  },
-  {
-    image: "/skillsAndComapies/growthtechz.webp",
-    imageVariant: "logo",
-    name: "GrowthTechz · USA",
-    title: "Custom Software & Integrations",
-    rating: 5,
-    quote:
-      "MB Stack transformed our legacy systems into a modern, scalable platform. Their support is unmatched.",
-  },
-  {
-    image: "",
+    image: "/testimonials/laravel-saudi.png",
     imageVariant: "photo",
-    name: "Sohelarman20 · Bangladesh",
+    name: "Saudi Arabia",
+    title: "Laravel Development",
+    rating: 5,
+    quote:
+      "Quality website and mobile application development with timely delivery – highly recommended!",
+  },
+  {
+    image: "/testimonials/sohelarman20.png",
+    imageVariant: "photo",
+    name: "Sohelarman20, Bangladesh",
     title: "JavaScript Development",
     rating: 5,
     quote:
-      "Best services. Very professional and delivered exactly as promised. Definitely recommend. Thanks a lot!",
+      "Best services. Very professional and delivered exactly as promised. Definitely recommend him. Thanks a lot!",
   },
   {
-    image: "",
+    image: "/testimonials/mlmsoftwarez.webp",
     imageVariant: "photo",
-    name: "Mlmsoftwarez · India",
+    name: "Mlmsoftwarez, India",
     title: "Website Development",
     rating: 4,
     quote:
-      "It was excellent working with them. Patient, trustworthy, and great with clients throughout the project.",
+      "It was excellent working with him. He is good with his clients .patience and trust keeping person.",
   },
   {
-    image: "/portfolios/lumoganic.webp",
+    image: "/testimonials/zelimchankagiro.webp",
     imageVariant: "photo",
-    name: "Lumoganic · E-commerce",
-    title: "Web Development & SEO",
+    name: "Zelimchankagiro, Austria",
+    title: "Web Application",
     rating: 5,
     quote:
-      "Our store performance and repeat customers improved significantly after MB Stack rebuilt our e-commerce experience.",
+      "App development, delivering exceptional results, and providing excellent service, good job!",
+  },
+  {
+    image: "/testimonials/freaksonar.webp",
+    imageVariant: "photo",
+    name: "Freaksonar, Nigeria",
+    title: "PHP Development",
+    rating: 5,
+    quote: "Great PHP developer, delivering quality work with excellence.",
+  },
+  {
+    image: "/testimonials/etrillionapps.webp",
+    imageVariant: "photo",
+    name: "Etrillionapps, Pakistan",
+    title: "Web Application",
+    rating: 5,
+    quote: "He is pro developer done my job within 20 mints great!!!!!",
+  },
+  {
+    image: "/testimonials/bilalax.webp",
+    imageVariant: "photo",
+    name: "Bilalax, Morocco",
+    title: "Web Application",
+    rating: 5,
+    quote: "very good job. and nice to deal with him",
+  },
+  {
+    image: "/testimonials/hooderuja.webp",
+    imageVariant: "photo",
+    name: "Hooderuja, Nigeria",
+    title: "Custom Website",
+    rating: 5,
+    quote:
+      "He is a calm person and knows what he is doing, he is always ready to implement changes. In the end he did a great job.",
   },
 ];

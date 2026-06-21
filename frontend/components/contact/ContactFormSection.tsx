@@ -13,7 +13,7 @@ const PROCESS_STEPS = [
 ] as const;
 
 const TRUST_POINTS = [
-  "No spam — ever",
+  "No spam, ever",
   "NDA available on request",
   "Senior engineers review every inquiry",
 ] as const;
@@ -72,7 +72,7 @@ export default function ContactFormSection() {
                 Start the conversation.
               </h2>
               <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-                Share your vision and we&apos;ll respond with a tailored plan —
+                Share your vision and we&apos;ll respond with a tailored plan , 
                 architecture, timeline, and investment range included.
               </p>
             </div>
@@ -178,7 +178,7 @@ export default function ContactFormSection() {
                 name="message"
                 required
                 rows={6}
-                placeholder="Tell us about your project — goals, timeline, tech preferences..."
+                placeholder="Tell us about your project, goals, timeline, tech preferences..."
                 className="w-full min-h-[160px] px-4 py-3 rounded-xl bg-slate-50 border border-slate-200/80 outline-none focus:ring-2 focus:ring-brand/40 focus:border-brand/40 focus:bg-white transition-all text-base resize-y placeholder:text-slate-400"
               />
             </div>

@@ -1,5 +1,5 @@
 import { PROJECTS, SITE_URL } from "@/constants";
-import { ExternalLink, Folder } from "lucide-react";
+import { ArrowRight, Folder } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -70,11 +70,10 @@ export default function PortfolioPage() {
                 </div>
 
                 <Link
-                  href={project.link}
-                  target="_blank"
+                  href={`/portfolio/${project.slug}`}
                   className="inline-flex items-center gap-2 font-bold text-sm sm:text-base text-slate-900 group-hover:text-brand transition-colors touch-manipulation min-h-11"
                 >
-                  View Case Study <ExternalLink size={16} />
+                  View Case Study <ArrowRight size={16} />
                 </Link>
               </div>
             </div>

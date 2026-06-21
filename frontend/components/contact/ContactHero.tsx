@@ -56,7 +56,7 @@ export default function ContactHero() {
             </span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto mb-8 sm:mb-10">
-            From UOG Business Incubation Center to a global software house — tell us
+            From UOG Business Incubation Center to a global software house, tell us
             about your project and our engineers will map the right path forward.
           </p>
 
