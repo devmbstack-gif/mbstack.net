@@ -147,7 +147,7 @@ export const FOOTER = {
     "444 Alaska Avenue, Suite #BBC525, Torrance, CA 90503 USA.",
   ],
   helplines: [
-    "+92 316 1465299 | +1 838 2131775",
+    "+92 316 1465299 | +92 347 9516266",
     "+92 347 9516266 | +92 55 4251078",
   ],
   email: "info@mbstack.net",
