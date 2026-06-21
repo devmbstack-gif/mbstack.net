@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { SITE } from "@/constants";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
@@ -130,7 +131,7 @@ export default function Header() {
 
             <div className="hidden md:block flex-shrink-0">
               <Link
-                href="/consultancy"
+                href={SITE.consultancyHref}
                 className="inline-flex items-center justify-center min-h-11 px-5 py-2.5 rounded-lg text-sm font-semibold text-white bg-brand hover:bg-brand-dark transition-all duration-200"
               >
                 Get Consultancy
@@ -261,7 +262,7 @@ export default function Header() {
               );
             })}
             <Link
-              href="/consultancy"
+              href={SITE.consultancyHref}
               onClick={closeMenu}
               className="mt-4 w-full min-h-12 inline-flex items-center justify-center px-8 py-3 rounded-xl text-base font-semibold text-white bg-brand hover:bg-brand-dark transition-all touch-manipulation"
             >

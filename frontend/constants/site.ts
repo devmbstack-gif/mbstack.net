@@ -9,7 +9,7 @@ export const SITE = {
   heroSubline: "Software, Mobile App, E-Commerce, Websites & More",
   ctaConsultancy: "Get Consultancy",
   ctaContact: "Contact Us",
-  consultancyHref: "/consultancy",
+  consultancyHref: "/sales",
   contactHref: "/contact",
 } as const;
 

@@ -20,12 +20,14 @@ export default function SalesCta() {
               {SALES.footerCta.description}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <Link
+              <a
                 href={SALES.footerCta.primaryHref}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto px-10 py-5 bg-white text-brand font-extrabold text-xl rounded-full hover:bg-stone-50 transition-all shadow-xl hover:scale-105"
               >
                 {SALES.footerCta.primaryCta}
-              </Link>
+              </a>
               <Link
                 href={SALES.footerCta.secondaryHref}
                 className="w-full sm:w-auto px-10 py-5 bg-transparent border-2 border-white/30 text-white font-bold text-xl rounded-full hover:bg-white/10 transition-all"

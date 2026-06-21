@@ -1,4 +1,5 @@
 export const SALES = {
+  calendlyHref: "https://calendly.com/teammbstack/30min",
   hero: {
     badge: "Limited Spots Available",
     headline: "Transform Your Business with High-Performance IT Solutions",
@@ -12,6 +13,7 @@ export const SALES = {
       { name: "Bilalax", image: "/testimonials/bilalax.webp" },
     ],
     trustLine: "Over 100+ businesses trust us",
+    bookNowCta: "Book Now",
   },
   trustLogos: [
     { name: "Space Zone", logo: "/skillsAndComapies/s.webp" },
@@ -280,8 +282,8 @@ export const SALES = {
   footerCta: {
     headline: "Ready to Start Your Journey?",
     description: "Join 100+ businesses that have scaled with MB Stack.",
-    primaryCta: "Book a Free Consultation",
-    primaryHref: "/consultancy",
+    primaryCta: "Book Now",
+    primaryHref: "https://calendly.com/teammbstack/30min",
     secondaryCta: "Contact Support",
     secondaryHref: "/contact",
   },

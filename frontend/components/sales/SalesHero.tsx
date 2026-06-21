@@ -83,6 +83,15 @@ export default function SalesHero() {
           {SALES.hero.description}
         </p>
 
+        <a
+          href={SALES.calendlyHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center px-10 py-4 bg-brand text-white font-bold text-lg rounded-full hover:bg-brand-dark transition-all shadow-lg shadow-brand/25 hover:scale-105"
+        >
+          {SALES.hero.bookNowCta}
+        </a>
+
         <div className="mt-12 max-w-4xl mx-auto">
           <div
             ref={videoSlotRef}

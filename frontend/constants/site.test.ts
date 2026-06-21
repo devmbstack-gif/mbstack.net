@@ -6,7 +6,7 @@ describe("site constants", () => {
       expect(SITE).toHaveProperty("name");
       expect(SITE).toHaveProperty("tagline");
       expect(SITE).toHaveProperty("description");
-      expect(SITE).toHaveProperty("consultancyHref", "/consultancy");
+      expect(SITE).toHaveProperty("consultancyHref", "/sales");
       expect(SITE).toHaveProperty("contactHref", "/contact");
     });
 

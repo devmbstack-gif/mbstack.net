@@ -35,7 +35,7 @@ describe("Hero", () => {
   it("renders Get Consultancy CTA with correct href", () => {
     render(<Hero />);
     const consultancyLink = screen.getByRole("link", { name: /get consultancy/i });
-    expect(consultancyLink).toHaveAttribute("href", "/consultancy");
+    expect(consultancyLink).toHaveAttribute("href", "/sales");
   });
 
   it("renders Contact Us CTA with correct href", () => {
