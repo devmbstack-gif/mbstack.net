@@ -49,6 +49,19 @@ sync_git() {
   printf '%s' "$AFTER"
 }
 
+ensure_production_env() {
+  log "Syncing production env files…"
+  cat >"$APP_DIR/frontend/.env.production.local" <<'EOF'
+NEXT_PUBLIC_API_URL=https://mbstack.net/api
+NEXT_PUBLIC_SITE_URL=https://mbstack.net
+NEXT_PUBLIC_E2E_MOCK_FORMS=0
+EOF
+
+  cat >"$APP_DIR/admin/.env.production.local" <<'EOF'
+NEXT_PUBLIC_API_URL=https://mbstack.net/api
+EOF
+}
+
 build_all() {
   log "Installing dependencies + building (fresh)…"
 
@@ -132,6 +145,18 @@ verify_live() {
   else
     log "WARNING: Admin not responding on :3712 yet"
   fi
+  if curl -fsS -o /dev/null -H "Host: mbstack.net" "https://127.0.0.1/api/health" -k 2>/dev/null; then
+    log "Nginx /api proxy health check OK"
+  else
+    log "WARNING: Nginx /api proxy not responding yet"
+  fi
+  if curl -fsS -X POST -H "Content-Type: application/json" \
+    -d '{"name":"Deploy Test","email":"test@mbstack.net","message":"health check"}' \
+    "http://127.0.0.1:3711/api/contact" 2>/dev/null | grep -q '"success":true'; then
+    log "Contact API POST check OK"
+  else
+    log "WARNING: Contact API POST check failed"
+  fi
 }
 
 # --- main ---
@@ -150,6 +175,7 @@ fi
 
 COMMIT="$(sync_git)"
 clean_build_artifacts
+ensure_production_env
 build_all
 restart_services
 verify_live "$COMMIT"

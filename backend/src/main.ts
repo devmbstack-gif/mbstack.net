@@ -19,8 +19,16 @@ async function bootstrap() {
   const frontendUrl = process.env.FRONTEND_URL ?? "http://localhost:3700";
   const adminUrl = process.env.ADMIN_URL ?? "http://localhost:3702";
 
+  const allowedOrigins = [
+    frontendUrl,
+    adminUrl,
+    "https://www.mbstack.net",
+    "http://localhost:3700",
+    "http://localhost:3702",
+  ].filter((origin, index, list) => Boolean(origin) && list.indexOf(origin) === index);
+
   app.enableCors({
-    origin: [frontendUrl, adminUrl],
+    origin: allowedOrigins,
     credentials: true,
   });
 

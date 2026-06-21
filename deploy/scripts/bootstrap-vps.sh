@@ -54,7 +54,7 @@ fi
 
 if [ ! -f "$APP_DIR/frontend/.env.production.local" ]; then
   cat >"$APP_DIR/frontend/.env.production.local" <<EOF
-NEXT_PUBLIC_API_URL=https://api.mbstack.net/api
+NEXT_PUBLIC_API_URL=https://mbstack.net/api
 NEXT_PUBLIC_SITE_URL=https://mbstack.net
 NEXT_PUBLIC_E2E_MOCK_FORMS=0
 EOF
@@ -63,7 +63,7 @@ fi
 
 if [ ! -f "$APP_DIR/admin/.env.production.local" ]; then
   cat >"$APP_DIR/admin/.env.production.local" <<EOF
-NEXT_PUBLIC_API_URL=https://api.mbstack.net/api
+NEXT_PUBLIC_API_URL=https://mbstack.net/api
 EOF
   log "Created admin/.env.production.local"
 fi

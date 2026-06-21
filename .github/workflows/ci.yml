@@ -41,7 +41,7 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          NEXT_PUBLIC_API_URL: https://api.mbstack.net/api
+          NEXT_PUBLIC_API_URL: https://mbstack.net/api
           NEXT_PUBLIC_SITE_URL: https://mbstack.net
 
   admin:
@@ -59,4 +59,4 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          NEXT_PUBLIC_API_URL: https://api.mbstack.net/api
+          NEXT_PUBLIC_API_URL: https://mbstack.net/api
