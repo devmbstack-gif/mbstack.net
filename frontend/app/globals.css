@@ -96,6 +96,20 @@ body {
   animation: dot-pulse 2s ease-in-out infinite;
 }
 
+/* Opaque PiP video on iOS/Android — avoids see-through iframe compositing bugs */
+.sales-pip-player {
+  isolation: isolate;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.sales-pip-player iframe {
+  opacity: 1;
+  background-color: #000;
+}
+
 .testimonials-slider-track::-webkit-scrollbar {
   display: none;
 }

@@ -1,7 +1,9 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
+import { X } from "lucide-react";
 import { SALES } from "@/constants";
 
 function CheckIcon() {
@@ -27,10 +29,62 @@ function getYoutubeEmbedUrl(videoId: string) {
   return `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
 }
 
+function VideoIframe({ embedUrl }: { embedUrl: string }) {
+  return (
+    <>
+      <div className="absolute inset-0 z-0 bg-black" aria-hidden />
+      <iframe
+        src={embedUrl}
+        title="MB Stack promotional video"
+        className="relative z-[1] h-full w-full border-0 bg-black"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      />
+    </>
+  );
+}
+
+function PinnedVideoPlayer({
+  embedUrl,
+  onClose,
+}: {
+  embedUrl: string;
+  onClose: () => void;
+}) {
+  return (
+    <div
+      className="sales-pip-player fixed z-[100] aspect-video overflow-hidden rounded-2xl border-4 border-white bg-black shadow-[0_20px_50px_rgba(0,0,0,0.5)] ring-2 ring-brand/30
+        bottom-[calc(5.25rem+env(safe-area-inset-bottom))] right-4 w-[min(88vw,280px)]
+        sm:bottom-6 sm:right-6 sm:w-80"
+      role="complementary"
+      aria-label="Mini video player"
+    >
+      <button
+        type="button"
+        onClick={onClose}
+        className="absolute top-2 right-2 z-20 flex h-8 w-8 items-center justify-center rounded-full bg-black/80 text-white shadow-md hover:bg-black"
+        aria-label="Close mini player"
+      >
+        <X className="h-4 w-4" aria-hidden />
+      </button>
+      <VideoIframe embedUrl={embedUrl} />
+      <div className="pointer-events-none absolute bottom-2 left-2 z-20 rounded-full bg-brand px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
+        Now playing
+      </div>
+    </div>
+  );
+}
+
 export default function SalesHero() {
   const videoSlotRef = useRef<HTMLDivElement>(null);
   const [isPinned, setIsPinned] = useState(false);
+  const [pinDismissed, setPinDismissed] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const embedUrl = getYoutubeEmbedUrl(SALES.hero.videoYoutubeId);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const slot = videoSlotRef.current;
@@ -38,11 +92,16 @@ export default function SalesHero() {
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsPinned(!entry.isIntersecting);
+        if (entry.isIntersecting) {
+          setIsPinned(false);
+          setPinDismissed(false);
+          return;
+        }
+        setIsPinned(true);
       },
       {
-        threshold: 0.15,
-        rootMargin: "-24px 0px 0px 0px",
+        threshold: 0,
+        rootMargin: "-8px 0px 0px 0px",
       },
     );
 
@@ -50,11 +109,12 @@ export default function SalesHero() {
     return () => observer.disconnect();
   }, []);
 
+  const showPinned = isPinned && !pinDismissed;
   const leftBenefits = SALES.expectations.slice(0, 2);
   const rightBenefits = SALES.expectations.slice(2, 4);
 
   return (
-    <section className="relative flex flex-col items-center justify-center pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 overflow-hidden bg-white">
+    <section className="relative flex flex-col items-center justify-center pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 overflow-x-clip bg-white">
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -95,30 +155,33 @@ export default function SalesHero() {
         <div className="mt-12 max-w-4xl mx-auto">
           <div
             ref={videoSlotRef}
-            className="relative aspect-video bg-stone-100 rounded-[2.5rem] mb-16"
+            className="relative aspect-video rounded-[2.5rem] mb-16 bg-stone-100"
           >
-            <div
-              className={
-                isPinned
-                  ? "fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[120] w-[min(88vw,280px)] sm:w-80 aspect-video overflow-hidden rounded-2xl shadow-2xl border-4 border-white ring-2 ring-brand/20 bg-stone-900"
-                  : "absolute inset-0 overflow-hidden rounded-[2.5rem] shadow-2xl border-[12px] border-white group"
-              }
-            >
-              <iframe
-                src={embedUrl}
-                title="MB Stack promotional video"
-                className="h-full w-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
-
-              {isPinned ? (
-                <div className="pointer-events-none absolute bottom-2 left-2 rounded-full bg-brand/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-white">
+            {showPinned ? (
+              <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 rounded-[2.5rem] border-[12px] border-white bg-stone-900/95 px-6 text-center shadow-inner">
+                <span className="inline-flex rounded-full bg-brand/15 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-brand">
                   Now playing
-                </div>
-              ) : null}
-            </div>
+                </span>
+                <p className="text-sm font-medium text-white/90">
+                  Video continues in the mini player
+                </p>
+              </div>
+            ) : (
+              <div className="absolute inset-0 overflow-hidden rounded-[2.5rem] border-[12px] border-white bg-black shadow-2xl">
+                <VideoIframe embedUrl={embedUrl} />
+              </div>
+            )}
           </div>
+
+          {mounted && showPinned
+            ? createPortal(
+                <PinnedVideoPlayer
+                  embedUrl={embedUrl}
+                  onClose={() => setPinDismissed(true)}
+                />,
+                document.body,
+              )
+            : null}
 
           <div className="grid md:grid-cols-2 gap-12 text-left bg-stone-50/50 p-10 rounded-[3rem] border border-stone-100">
             {[leftBenefits, rightBenefits].map((column, columnIndex) => (
