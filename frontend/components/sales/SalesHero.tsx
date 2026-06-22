@@ -143,19 +143,10 @@ export default function SalesHero() {
           {SALES.hero.description}
         </p>
 
-        <a
-          href={SALES.calendlyHref}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center px-10 py-4 bg-brand text-white font-bold text-lg rounded-full hover:bg-brand-dark transition-all shadow-lg shadow-brand/25 hover:scale-105"
-        >
-          {SALES.hero.bookNowCta}
-        </a>
-
         <div className="mt-12 max-w-4xl mx-auto">
           <div
             ref={videoSlotRef}
-            className="relative aspect-video rounded-[2.5rem] mb-16 bg-stone-100"
+            className="relative aspect-video rounded-[2.5rem] mb-8 bg-stone-100"
           >
             {showPinned ? (
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 rounded-[2.5rem] border-[12px] border-white bg-stone-900/95 px-6 text-center shadow-inner">
@@ -172,6 +163,15 @@ export default function SalesHero() {
               </div>
             )}
           </div>
+
+          <a
+            href={SALES.calendlyHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-10 py-4 mb-16 bg-brand text-white font-bold text-lg rounded-full hover:bg-brand-dark transition-all shadow-lg shadow-brand/25 hover:scale-105"
+          >
+            {SALES.hero.bookNowCta}
+          </a>
 
           {mounted && showPinned
             ? createPortal(
