@@ -281,6 +281,11 @@ export const TEAM_MEMBERS: TeamMember[] = [
     role: "Digital Marketer",
     image: "/team/11.png",
   },
+  {
+    name: "Fatima Mansoor",
+    role: "Business Developer Specialist",
+    image: "/team/12.png",
+  },
 ] as const;
 
 export interface Project {
