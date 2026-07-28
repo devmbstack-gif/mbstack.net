@@ -133,17 +133,79 @@ export const SALES = {
       {
         title: "Digital Transformation",
         description:
-          "Modernising services with secure, scalable platforms built for Saudi enterprises and institutions.",
+          "Enterprise-grade platforms with hardened security, clean architecture, and performance you can measure—built for Saudi enterprises that cannot afford downtime or rework.",
       },
       {
         title: "AI & Automation",
         description:
-          "Intelligent products, from legal AI and multi-agent systems to workflow automation that cuts manual work.",
+          "Production-ready AI and workflow automation—legal assistants, multi-agent systems, and bilingual bots—engineered for accuracy, compliance, and real operational ROI.",
       },
       {
         title: "Private Sector Growth",
         description:
-          "Software that helps businesses diversify revenue, operate at scale, and compete in a digital economy.",
+          "Revenue-focused software with dedicated delivery teams, structured QA, and long-term support so you launch faster, scale confidently, and compete in a digital economy.",
+      },
+    ],
+  },
+  packages: {
+    badge: "B2B Sales Engine",
+    headline: "Unbeatable B2B Sales Tiers & High-Margin Add-Ons",
+    subheadline:
+      "PropTech and broker teams get instant lead capture, WhatsApp automation, and optional AI voice—deployed fast with clear pricing and no guesswork.",
+    footnote:
+      "Packages are tailored to your CRM and market. Custom integrations and add-ons quoted after a short discovery call.",
+    tiers: [
+      {
+        id: "silver-sprint",
+        name: "Silver Sprint",
+        badge: "Fast Setup",
+        price: "$499",
+        priceNote: "One-Time Setup",
+        highlight: false,
+        deliverables: [
+          "High-Converting 3-Step Lead Intake UI",
+          "n8n WhatsApp Instant Dispatch (<30s)",
+          "Google Sheets & Email Auto-Backup",
+          "Direct WhatsApp Click-to-Chat Broker Link",
+          "Risk-Free: 48-Hour Deployment Guarantee",
+        ],
+        competitiveEdge:
+          "10× faster response time than standard web forms. Zero monthly software overhead.",
+      },
+      {
+        id: "gold-automation",
+        name: "Gold Automation",
+        badge: "Most Popular",
+        price: "$1,099",
+        priceNote: "Monthly Retainer",
+        highlight: true,
+        deliverables: [
+          "Everything in Silver Package +",
+          "Smart Round-Robin Broker Lead Distribution",
+          "Bi-Directional CRM Sync (HubSpot / GoHighLevel)",
+          "Automated WhatsApp Buyer Qualification Bot (Arabic/English)",
+          "Lead Hot/Cold Intent Scoring & Instant Tagging",
+        ],
+        competitiveEdge:
+          "Replaces a $3,000/mo intake coordinator with 24/7 instant automated qualification.",
+      },
+      {
+        id: "platinum-ai",
+        name: "Platinum AI Enterprise",
+        badge: "Full Autonomous",
+        price: "$1,699",
+        priceNote: "Monthly Retainer",
+        highlight: false,
+        deliverables: [
+          "Everything in Gold Package +",
+          "24/7 AI Voicebot Agent (Immediate Call-on-Submit)",
+          "Custom AI Knowledge Base Trained on Project Brochures",
+          "Automated Calendar Appointment Booking",
+          "Long-Term WhatsApp Re-Engagement Workflows",
+          "24/7 SLA Priority System Maintenance",
+        ],
+        competitiveEdge:
+          "Full 24/7 autonomous sales engine that calls leads within 15s and answers project Q&A.",
       },
     ],
   },

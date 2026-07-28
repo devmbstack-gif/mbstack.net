@@ -5,6 +5,7 @@ import SalesProblem from "@/components/sales/SalesProblem";
 import SalesExpectations from "@/components/sales/SalesExpectations";
 import SalesStickyCards from "@/components/sales/SalesStickyCards";
 import SalesVision2030 from "@/components/sales/SalesVision2030";
+import SalesPackages from "@/components/sales/SalesPackages";
 import SalesCaseStudies from "@/components/sales/SalesCaseStudies";
 import Testomonials from "@/components/sections/Testomonials";
 import SalesFaq from "@/components/sales/SalesFaq";
@@ -33,6 +34,7 @@ export default function SalesPage() {
       <SalesExpectations />
       <SalesStickyCards />
       <SalesVision2030 />
+      <SalesPackages />
       <SalesCaseStudies />
       <Testomonials />
       <SalesFaq />
