@@ -192,7 +192,7 @@ export const HOME_TESTIMONIALS: ClientTestimonial[] = [
     title: "Laravel Development",
     rating: 5,
     quote:
-      "Quality website and mobile application development with timely delivery – highly recommended!",
+      "Quality website and mobile application development with timely delivery. Highly recommended!",
   },
   {
     image: "/testimonials/sohelarman20.png",

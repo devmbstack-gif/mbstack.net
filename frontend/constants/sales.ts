@@ -3,7 +3,7 @@ export const SALES = {
   hero: {
     badge: "Limited Spots Available",
     headline: "Transform Your Business with High-Performance IT Solutions",
-    subheadline: "Accelerate Your Growth – Fast, Reliable, and Professional!",
+    subheadline: "Accelerate Your Growth: Fast, Reliable, and Professional!",
     description:
       "We help you scale your business with custom software development, mobile apps, and AI solutions - with full support from concept to deployment and beyond.",
     videoYoutubeId: "OGfRr9Zv2xo",
@@ -133,12 +133,12 @@ export const SALES = {
       {
         title: "Digital Transformation",
         description:
-          "Enterprise-grade platforms with hardened security, clean architecture, and performance you can measure—built for Saudi enterprises that cannot afford downtime or rework.",
+          "Enterprise-grade platforms with hardened security, clean architecture, and performance you can measure, built for Saudi enterprises that cannot afford downtime or rework.",
       },
       {
         title: "AI & Automation",
         description:
-          "Production-ready AI and workflow automation—legal assistants, multi-agent systems, and bilingual bots—engineered for accuracy, compliance, and real operational ROI.",
+          "Production-ready AI and workflow automation, including legal assistants, multi-agent systems, and bilingual bots, engineered for accuracy, compliance, and real operational ROI.",
       },
       {
         title: "Private Sector Growth",
@@ -151,7 +151,7 @@ export const SALES = {
     badge: "B2B Sales Engine",
     headline: "Unbeatable B2B Sales Tiers & High-Margin Add-Ons",
     subheadline:
-      "PropTech and broker teams get instant lead capture, WhatsApp automation, and optional AI voice—deployed fast with clear pricing and no guesswork.",
+      "PropTech and broker teams get instant lead capture, WhatsApp automation, and optional AI voice, deployed fast with clear pricing and no guesswork.",
     footnote:
       "Packages are tailored to your CRM and market. Custom integrations and add-ons quoted after a short discovery call.",
     tiers: [
@@ -170,7 +170,7 @@ export const SALES = {
           "Risk-Free: 48-Hour Deployment Guarantee",
         ],
         competitiveEdge:
-          "10× faster response time than standard web forms. Zero monthly software overhead.",
+          "10x faster response time than standard web forms. Zero monthly software overhead.",
       },
       {
         id: "gold-automation",

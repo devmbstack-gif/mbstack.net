@@ -70,7 +70,7 @@ export default function DashboardPage() {
             <span className="inline-flex max-w-full items-center gap-2 rounded-full border bg-white/80 px-3 py-2 text-xs shadow-sm sm:px-4 sm:text-sm">
               <Clock3 className="h-4 w-4 shrink-0 text-primary" />
               <span className="truncate">
-                Last updated: {lastUpdated ? formatDate(lastUpdated) : "—"}
+                Last updated: {lastUpdated ? formatDate(lastUpdated) : "N/A"}
               </span>
             </span>
           </TooltipTrigger>

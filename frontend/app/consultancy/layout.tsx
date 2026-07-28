@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Book a free 30-minute technical consultancy with MB Stack. Tech stack audit, scalability plan, timeline estimate, and expert advice.",
   openGraph: {
-    title: "Expert Strategy Session – Free Consultancy",
+    title: "Expert Strategy Session | Free Consultancy",
     description:
       "Stop guessing and start building. Audit your roadmap and choose the right stack.",
     url: `${SITE_URL}/consultancy`,

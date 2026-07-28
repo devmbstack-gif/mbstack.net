@@ -9,7 +9,7 @@ export const metadata = {
   title: "Home",
   description: SEO.defaultDescription,
   openGraph: {
-    title: `${SITE.name} – ${SITE.tagline}`,
+    title: `${SITE.name} | ${SITE.tagline}`,
     description: SEO.defaultDescription,
     url: SITE_URL,
   },

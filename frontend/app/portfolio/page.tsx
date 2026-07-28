@@ -9,7 +9,7 @@ export const metadata = {
     "A curated selection of digital experiences we've built for ambitious companies worldwide. Web, mobile, and software projects.",
   openGraph: {
     title: "Portfolio",
-    description: "Our masterpieces – case studies and projects by MB Stack.",
+    description: "Our masterpieces: case studies and projects by MB Stack.",
     url: `${SITE_URL}/portfolio`,
   },
   alternates: { canonical: `${SITE_URL}/portfolio` },

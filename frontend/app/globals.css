@@ -96,7 +96,7 @@ body {
   animation: dot-pulse 2s ease-in-out infinite;
 }
 
-/* Opaque PiP video on iOS/Android — avoids see-through iframe compositing bugs */
+/* Opaque PiP video on iOS/Android - avoids see-through iframe compositing bugs */
 .sales-pip-player {
   isolation: isolate;
   transform: translateZ(0);

@@ -9,7 +9,7 @@ export const metadata = {
     "Meet the experts at MB Stack. Driven by innovation, defined by our people. Specialists dedicated to your digital growth.",
   openGraph: {
     title: "Our Team",
-    description: "The faces behind MBStack – innovation and growth.",
+    description: "The faces behind MBStack: innovation and growth.",
     url: `${SITE_URL}/team`,
   },
   alternates: { canonical: `${SITE_URL}/team` },
