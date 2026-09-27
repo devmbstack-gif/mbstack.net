@@ -238,7 +238,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Rana Ali Raza",
-    role: "Project Manager Officer (PMO)",
+    role: "Senior Project Manager Officer (PMO)",
     image: "/team/3.jpeg",
   },
   {
