@@ -2,6 +2,7 @@ import BelowHero from "@/components/sections/BelowHero";
 import Link from "next/link";
 import React from "react";
 import { SITE_URL } from "@/constants";
+import AllTeamMembersPage from "../all-team-members/component";
 
 export const metadata = {
   title: "About Us",
@@ -103,6 +104,7 @@ export default function AboutPage() {
           </Link>
         </div>
       </section>
+      <AllTeamMembersPage/>
 
       <section className="bg-slate-50 section-padding">
         <div className="page-container max-w-7xl">

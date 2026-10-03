@@ -19,22 +19,6 @@ export const metadata = {
 export default function AllTeamMembersPage() {
   return (
     <main className="min-h-screen bg-white">
-      <section className="bg-slate-900 section-padding px-0 text-center text-white">
-        <div className="page-container max-w-4xl">
-          <h2 className="text-brand font-semibold tracking-widest uppercase mb-3 sm:mb-4 text-xs sm:text-sm">
-            The Faces Behind MBStack
-          </h2>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
-            Driven by Innovation, Defined by Our People
-          </h1>
-          <p className="text-slate-400 text-base sm:text-lg md:text-xl leading-relaxed">
-            From our early days at the University of Gujrat BIC, we&apos;ve gathered
-            a diverse group of specialists dedicated to sculpting paths of
-            innovation and growth. Meet the experts turning your digital dreams
-            into reality.
-          </p>
-        </div>
-      </section>
 
       <section className="section-padding">
         <div className="page-container max-w-7xl">
