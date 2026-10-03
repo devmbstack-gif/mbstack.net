@@ -1,4 +1,4 @@
-﻿import { getPortfolioProjects } from "./portfolioCaseStudies";
+import { getPortfolioProjects } from "./portfolioCaseStudies";
 
 export const SITE = {
   name: "MB Stack",
@@ -237,29 +237,66 @@ export const TEAM_MEMBERS: TeamMember[] = [
     image: "/team/2.png",
   },
   {
-    name: "Rana Ali Raza",
-    role: "Senior Project Manager Officer (PMO)",
-    image: "/team/3.jpeg",
+    name: "Syed Safeer ul Hassan",
+    role: "Senior Business Developer",
+    image: "/team/6.png",
   },
+  // {
+  //   name: "Rana Ali Raza",
+  //   role: "Senior Project Manager Officer (PMO)",
+  //   image: "/team/3.jpeg",
+  // },
   {
     name: "Muqqadas",
     role: "Chief Marketing Officer (CMO)",
     image: "/team/4.png",
   },
+  
   {
     name: "Amina Bibi",
     role: "IT Manager",
     image: "/team/5.png",
   },
   {
-    name: "Syed Safeer ul Hassan",
-    role: "Senior Business Developer",
-    image: "/team/6.png",
+    name: "Ahmad Imran",
+    role: "AI Engineer",
+    image: "/team/13.jpg",
   },
   {
-    name: "Usama Nawab",
-    role: "Flutter Developer",
-    image: "/team/7.png",
+    name: "Muhammad Haris",
+    role: "MERN Stack Developer",
+    image: "/team/14.jpg",
+  },
+  {
+    name: "Savaiz Said Gill",
+    role: "MERN Stack Developer",
+    image: "/team/15.jpg",
+  },
+  {
+    name: "Bilal Ahmed",
+    role: "MERN Stack Developer",
+    image: "/team/16.jpg",
+  },
+  {
+    name: "Mahnoor",
+    role: "AI Engineer",
+    image: "/team/17.jpg",
+  },
+  {
+    name: "Areeba Hassam",
+    role: "Digital Marketer",
+    image: "/team/18.jpg",
+  },
+  
+  // {
+  //   name: "Usama Nawab",
+  //   role: "Flutter Developer",
+  //   image: "/team/7.png",
+  // },
+   {
+    name: "Fatima Mansoor",
+    role: "Business Developer Specialist",
+    image: "/team/12.png",
   },
   {
     name: "Ujala Fiaz",
@@ -271,21 +308,18 @@ export const TEAM_MEMBERS: TeamMember[] = [
     role: "Business Developer",
     image: "/team/9.png",
   },
-  {
-    name: "Mr. Talha",
-    role: "Graphic Designer",
-    image: "/team/10.png",
-  },
+  // {
+  //   name: "Mr. Talha",
+  //   role: "Graphic Designer",
+  //   image: "/team/10.png",
+  // },
   {
     name: "Sumavia Khurum",
     role: "Digital Marketer",
     image: "/team/11.png",
   },
-  {
-    name: "Fatima Mansoor",
-    role: "Business Developer Specialist",
-    image: "/team/12.png",
-  },
+ 
+  
 ] as const;
 
 export interface Project {

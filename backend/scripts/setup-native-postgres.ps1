@@ -1,11 +1,11 @@
-# Prepare local PostgreSQL 17 for MB Stack.
+# Prepare local PostgreSQL 18 for MB Stack.
 # Re-launches as Administrator when needed to set postgres password and create mbstack_db.
 
 param(
   [string]$NewPassword = "admin",
   [string]$DatabaseName = "mbstack_db",
-  [string]$PgVersion = "17",
-  [string]$ServiceName = "postgresql-x64-17",
+  [string]$PgVersion = "18",
+  [string]$ServiceName = "postgresql-x64-18",
   [string]$LogFile = ""
 )
 
@@ -74,7 +74,7 @@ function Read-DatabasePasswordFromEnv {
 }
 
 if (-not (Test-Path $psql)) {
-  throw "PostgreSQL $PgVersion not found. Install PostgreSQL 17 first."
+  throw "PostgreSQL $PgVersion not found. Install PostgreSQL $PgVersion first."
 }
 
 $configuredPassword = Read-DatabasePasswordFromEnv
