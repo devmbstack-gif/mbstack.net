@@ -169,7 +169,7 @@ export const FOOTER = {
     { label: "Terms of Service", href: "/privacy" },
   ],
   copyright:
-    "Copyright Â© 2022-2026 MB Stack | Software Development Company",
+    "Copyright © 2022-2026 MB Stack | Software Development Company",
   whatsappNumber: "+923161465299", // e.g. '923161465299' for WhatsApp link
   chatLabel: "Chat with us",
 } as const;
