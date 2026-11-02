@@ -228,7 +228,7 @@ export interface TeamMember {
 export const TEAM_MEMBERS: TeamMember[] = [
   {
     name: "Muhammad Bilal",
-    role: "CEO & COO Founder",
+    role: "CEO & CO Founder",
     image: "/team/1.png",
   },
   {
@@ -287,7 +287,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     image: "/team/12.png",
   },
   {
-    name: "Ahmed Imran",
+    name: "Ahmad Imran",
     role: "AI Engineer",
     image: "/team/13.png",
   },
@@ -307,7 +307,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     image: "/team/16.png",
   },
   {
-    name: "Bilal Ahmed",
+    name: "Bilal Ahmad",
     role: "Full Stack AI Engineer",
     image: "/team/17.png",
   },
