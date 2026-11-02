@@ -70,9 +70,9 @@ export const LIVE_COUNTRIES = [
 
 export const COMPANY_STATS = {
   projectsCompleted: 50,
-  happyClients:50,
+  happyClients: 50,
   companiesServed: 50,
-  teamMembers: 11,
+  teamMembers: 19,
   yearsExperience: 10,
 } as const;
 
@@ -286,6 +286,41 @@ export const TEAM_MEMBERS: TeamMember[] = [
     role: "Business Developer Specialist",
     image: "/team/12.png",
   },
+  {
+    name: "Ahmed Imran",
+    role: "AI Engineer",
+    image: "/team/13.png",
+  },
+  {
+    name: "Areeba Hassam",
+    role: "Digital Marketer",
+    image: "/team/14.png",
+  },
+  {
+    name: "Muhammad Haris",
+    role: "Full Stack AI Engineer",
+    image: "/team/15.png",
+  },
+  {
+    name: "Mahnoor",
+    role: "AI Engineer",
+    image: "/team/16.png",
+  },
+  {
+    name: "Bilal Ahmed",
+    role: "Full Stack AI Engineer",
+    image: "/team/17.png",
+  },
+  {
+    name: "Savaiz Said Gill",
+    role: "MERN Stack Developer & Project Manager",
+    image: "/team/18.png",
+  },
+  {
+    name: "Zuha Shehzadi",
+    role: "MERN Stack Developer",
+    image: "/team/19.png",
+  }
 ] as const;
 
 export interface Project {
