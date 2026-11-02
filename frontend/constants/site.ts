@@ -233,13 +233,8 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Hafiz Ahmad Ali",
-    role: "Chief Technology Officer (CTO)",
+    role: "CTO & HR",
     image: "/team/2.png",
-  },
-  {
-    name: "Rana Ali Raza",
-    role: "Senior Project Manager Officer (PMO)",
-    image: "/team/3.jpeg",
   },
   {
     name: "Muqqadas",
@@ -247,48 +242,60 @@ export const TEAM_MEMBERS: TeamMember[] = [
     image: "/team/4.png",
   },
   {
-    name: "Amina Bibi",
-    role: "IT Manager",
-    image: "/team/5.png",
+    name: "Savaiz Said Gill",
+    role: "Project Manager",
+    image: "/team/18.png",
   },
+  // {
+  //   name: "Rana Ali Raza",
+  //   role: "Senior Project Manager Officer (PMO)",
+  //   image: "/team/3.jpeg",
+  // },
   {
     name: "Syed Safeer ul Hassan",
     role: "Senior Business Developer",
     image: "/team/6.png",
   },
+
   {
-    name: "Usama Nawab",
-    role: "Flutter Developer",
-    image: "/team/7.png",
+    name: "Amina Bibi",
+    role: "IT Manager",
+    image: "/team/5.png",
   },
-  {
-    name: "Ujala Fiaz",
-    role: "Business Developer",
-    image: "/team/8.png",
-  },
-  {
-    name: "Nida Fatima",
-    role: "Business Developer",
-    image: "/team/9.png",
-  },
-  {
-    name: "Mr. Talha",
-    role: "Graphic Designer",
-    image: "/team/10.png",
-  },
-  {
-    name: "Sumavia Khurum",
-    role: "Digital Marketer",
-    image: "/team/11.png",
-  },
-  {
-    name: "Fatima Mansoor",
-    role: "Business Developer Specialist",
-    image: "/team/12.png",
-  },
+
+  // {
+  //   name: "Usama Nawab",
+  //   role: "Flutter Developer",
+  //   image: "/team/7.png",
+  // },
+  // {
+  //   name: "Ujala Fiaz",
+  //   role: "Business Developer",
+  //   image: "/team/8.png",
+  // },
+  // {
+  //   name: "Nida Fatima",
+  //   role: "Business Developer",
+  //   image: "/team/9.png",
+  // },
+  // {
+  //   name: "Mr. Talha",
+  //   role: "Graphic Designer",
+  //   image: "/team/10.png",
+  // },
+  // {
+  //   name: "Sumavia Khurum",
+  //   role: "Digital Marketer",
+  //   image: "/team/11.png",
+  // },
+  // {
+  //   name: "Fatima Mansoor",
+  //   role: "Business Developer Specialist",
+  //   image: "/team/12.png",
+  // },
   {
     name: "Ahmad Imran",
-    role: "AI Engineer",
+    role: "Senior AI Engineer",
     image: "/team/13.png",
   },
   {
@@ -298,7 +305,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Muhammad Haris",
-    role: "Full Stack AI Engineer",
+    role: "Full Stack Developer",
     image: "/team/15.png",
   },
   {
@@ -308,13 +315,8 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Bilal Ahmad",
-    role: "Full Stack AI Engineer",
+    role: "Full Stack Developer",
     image: "/team/17.png",
-  },
-  {
-    name: "Savaiz Said Gill",
-    role: "MERN Stack Developer & Project Manager",
-    image: "/team/18.png",
   },
   {
     name: "Zuha Shehzadi",
