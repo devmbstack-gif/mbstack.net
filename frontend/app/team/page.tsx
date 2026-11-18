@@ -1,5 +1,3 @@
 import { notFound } from "next/navigation";
 
-export default function TeamPage() {
-  notFound();
-}
+export { default, metadata } from "../all-team-members/page";

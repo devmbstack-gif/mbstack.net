@@ -61,6 +61,9 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true },
   },
+  verification: {
+    google: "qg_E93THUt885IzN67ih3e2LF8k7mMMGIWRtjohs8_w",
+  },
   alternates: { canonical: SITE_URL },
   category: "technology",
 };

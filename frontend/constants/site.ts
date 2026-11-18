@@ -70,9 +70,9 @@ export const LIVE_COUNTRIES = [
 
 export const COMPANY_STATS = {
   projectsCompleted: 50,
-  happyClients:50,
+  happyClients: 50,
   companiesServed: 50,
-  teamMembers: 11,
+  teamMembers: 19,
   yearsExperience: 10,
 } as const;
 
@@ -169,7 +169,7 @@ export const FOOTER = {
     { label: "Terms of Service", href: "/privacy" },
   ],
   copyright:
-    "Copyright Â© 2022-2026 MB Stack | Software Development Company",
+    "Copyright © 2022-2026 MB Stack | Software Development Company",
   whatsappNumber: "+923161465299", // e.g. '923161465299' for WhatsApp link
   chatLabel: "Chat with us",
 } as const;
@@ -228,18 +228,13 @@ export interface TeamMember {
 export const TEAM_MEMBERS: TeamMember[] = [
   {
     name: "Muhammad Bilal",
-    role: "CEO & COO Founder",
+    role: "CEO & CO Founder",
     image: "/team/1.png",
   },
   {
     name: "Hafiz Ahmad Ali",
-    role: "Chief Technology Officer (CTO)",
+    role: "CTO & HR",
     image: "/team/2.png",
-  },
-  {
-    name: "Rana Ali Raza",
-    role: "Senior Project Manager Officer (PMO)",
-    image: "/team/3.jpeg",
   },
   {
     name: "Muqqadas",
@@ -247,45 +242,87 @@ export const TEAM_MEMBERS: TeamMember[] = [
     image: "/team/4.png",
   },
   {
-    name: "Amina Bibi",
-    role: "IT Manager",
-    image: "/team/5.png",
+    name: "Savaiz Said Gill",
+    role: "Project Manager",
+    image: "/team/18.png",
   },
+  // {
+  //   name: "Rana Ali Raza",
+  //   role: "Senior Project Manager Officer (PMO)",
+  //   image: "/team/3.jpeg",
+  // },
   {
     name: "Syed Safeer ul Hassan",
     role: "Senior Business Developer",
     image: "/team/6.png",
   },
+
   {
-    name: "Usama Nawab",
-    role: "Flutter Developer",
-    image: "/team/7.png",
+    name: "Amina Bibi",
+    role: "IT Manager",
+    image: "/team/5.png",
+  },
+
+  // {
+  //   name: "Usama Nawab",
+  //   role: "Flutter Developer",
+  //   image: "/team/7.png",
+  // },
+  // {
+  //   name: "Ujala Fiaz",
+  //   role: "Business Developer",
+  //   image: "/team/8.png",
+  // },
+  // {
+  //   name: "Nida Fatima",
+  //   role: "Business Developer",
+  //   image: "/team/9.png",
+  // },
+  // {
+  //   name: "Mr. Talha",
+  //   role: "Graphic Designer",
+  //   image: "/team/10.png",
+  // },
+  // {
+  //   name: "Sumavia Khurum",
+  //   role: "Digital Marketer",
+  //   image: "/team/11.png",
+  // },
+  // {
+  //   name: "Fatima Mansoor",
+  //   role: "Business Developer Specialist",
+  //   image: "/team/12.png",
+  // },
+  {
+    name: "Ahmad Imran",
+    role: "Senior AI Engineer",
+    image: "/team/13.png",
   },
   {
-    name: "Ujala Fiaz",
-    role: "Business Developer",
-    image: "/team/8.png",
-  },
-  {
-    name: "Nida Fatima",
-    role: "Business Developer",
-    image: "/team/9.png",
-  },
-  {
-    name: "Mr. Talha",
-    role: "Graphic Designer",
-    image: "/team/10.png",
-  },
-  {
-    name: "Sumavia Khurum",
+    name: "Areeba Hassam",
     role: "Digital Marketer",
-    image: "/team/11.png",
+    image: "/team/14.png",
   },
   {
-    name: "Fatima Mansoor",
-    role: "Business Developer Specialist",
-    image: "/team/12.png",
+    name: "Muhammad Haris",
+    role: "Full Stack Developer",
+    image: "/team/15.png",
   },
+  {
+    name: "Mahnoor",
+    role: "AI Engineer",
+    image: "/team/16.png",
+  },
+  {
+    name: "Bilal Ahmad",
+    role: "Full Stack Developer",
+    image: "/team/17.png",
+  },
+  {
+    name: "Zuha Shehzadi",
+    role: "MERN Stack Developer",
+    image: "/team/19.png",
+  }
 ] as const;
 
 export interface Project {
