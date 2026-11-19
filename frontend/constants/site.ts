@@ -1,4 +1,4 @@
-﻿import { getPortfolioProjects } from "./portfolioCaseStudies";
+import { getPortfolioProjects } from "./portfolioCaseStudies";
 
 export const SITE = {
   name: "MB Stack",
@@ -170,7 +170,7 @@ export const FOOTER = {
   ],
   copyright:
     "Copyright © 2022-2026 MB Stack | Software Development Company",
-  whatsappNumber: "+923161465299", // e.g. '923161465299' for WhatsApp link
+  whatsappNumber: "+923079697928", // e.g. '923079697928' for WhatsApp link
   chatLabel: "Chat with us",
 } as const;
 
