@@ -61,9 +61,6 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true },
   },
-  verification: {
-    google: "qg_E93THUt885IzN67ih3e2LF8k7mMMGIWRtjohs8_w",
-  },
   alternates: { canonical: SITE_URL },
   category: "technology",
 };
@@ -122,7 +119,29 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Google Site Verification */}
+        <meta
+          name="google-site-verification"
+          content="qg_E93THUt885IzN67ih3e2LF8k7mMMGIWRtjohs8_w"
+        />
+
+        {/* Google Tag Manager */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-MRMBV8QJ"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            `,
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased text-stone-900`}
       >
